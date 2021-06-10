@@ -2,7 +2,8 @@ import React, { useContext, useEffect } from 'react'
 import { GlobalState } from '../../../GlobalState'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-
+import img2 from './img2.gif';
+import './mainPage.css'
 
 function MainPage() {
     return (
@@ -11,7 +12,8 @@ function MainPage() {
                 PRUEBA DE MainPage
             </h2>
             <p>
-                Somos un emprendimiento de aceites.
+                <img src={img2} alt="gg" />
+                <div class="separator">Next section</div>
             </p>
         </div>
     )
