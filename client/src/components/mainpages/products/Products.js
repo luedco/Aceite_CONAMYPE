@@ -59,7 +59,6 @@ function Products() {
     if(loading) return <div><Loading /></div>
     return (
         <>
-        <Filters />
         
         {
             isAdmin && 
