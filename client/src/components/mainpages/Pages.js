@@ -10,6 +10,12 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
+import QuienesSomos from './quienesSomos/QuienesSomos'
+import MainPage from './mainPage/MainPage'
+import SaludBeneficios from './saludBeneficios/SaludBeneficios'
+import Ayuda from './ayuda/Ayuda'
+import Contacto from './contacto/Contacto'
+
 
 import {GlobalState} from '../../GlobalState'
 
@@ -36,6 +42,13 @@ function Pages() {
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
+
+            <Route path="/quienesSomos" exact component={QuienesSomos}/>
+
+            <Route path="/mainPage" exact component={MainPage}/>
+            <Route path="/saludbeneficios" exact component={SaludBeneficios}/>
+            <Route path="/ayuda" exact component={Ayuda}/>
+            <Route path="/contacto" exact component={Contacto}/>
 
 
             <Route path="*" exact component={NotFound} />
