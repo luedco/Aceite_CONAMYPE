@@ -6,7 +6,7 @@ import img2 from './img2.gif';
 import img1 from './discount.jpg'
 import img3 from './img3.jpeg'
 import './mainPage.css'
-import Example from './Carrusel'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel'
 
 function MainPage() {
