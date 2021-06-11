@@ -59,7 +59,7 @@ function MainPage() {
             </Carousel>
             <br></br>
             <p>
-                <div class="separator"></div>
+                <div class="separator">COCONUT LINE </div>
             </p>
             <br></br>
             <CardDeck>
