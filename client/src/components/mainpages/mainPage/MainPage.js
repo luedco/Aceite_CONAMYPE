@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from 'react'
 import { GlobalState } from '../../../GlobalState'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import img1 from './discount.jpg'
+import img1 from './img1.jpg'
 import img2 from './img2.gif';
-import img3 from './img3.jpeg';
+import img3 from './img3.jpg';
 import ml10 from './10ml.jpg';
 import ml20 from './20ml.jpg';
 import ml30 from './30ml.jpg';
@@ -29,10 +29,7 @@ function MainPage() {
                         src={img1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
                     <img
@@ -40,10 +37,6 @@ function MainPage() {
                         src={img2}
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
@@ -51,25 +44,21 @@ function MainPage() {
                         src={img3}
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
             <br></br>
             <p>
-                <div class="separator">COCONUT LINE </div>
+                <div class="separator"><h2>COCONUT LINE</h2></div>
             </p>
             <br></br>
             <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={ml10} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Aceite de Coco con Presentación Compacta</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                            Proporciona una facilidad al momento de su uso y acompañamiento, 
+                            ya que puede estar presente en tu vanity o en tus viajes mas importantes.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -79,10 +68,10 @@ function MainPage() {
                 <Card>
                     <Card.Img variant="top" src={ml20} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Aceite de Coco con Presentación Media</Card.Title>
                         <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
+                            Puede estar presente después de un día largo de trabajo, 
+                            ya que puede ayudarte a relajarte y ha disminuir los flujos de estrés.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -92,11 +81,10 @@ function MainPage() {
                 <Card>
                     <Card.Img variant="top" src={ml30} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Aceite de Coco con Presentación Plus</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            Un producto ideal para compartirlo con la familia o con tu pareja, 
+                            así juntos podrán mantener un mejor cuidado en su salud y belleza.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
