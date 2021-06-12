@@ -8,15 +8,23 @@ a {
   float:left;
 }
 
+
 .social-icons li {
   margin: auto;
   align-content: center;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 0.8em;
+  width: 100%;
+  text-align: center;
 }
-
-
+ul{
+  width: 100%;
+  text-align: center;
+}
+.li{
+  display: inline-block;
+}
 #l2 li{
   display: inline;
 }
