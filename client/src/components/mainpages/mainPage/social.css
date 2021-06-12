@@ -1,0 +1,37 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+a {
+  color:#009688;
+}
+
+#l1, #l2{
+  float:left;
+}
+
+.social-icons li {
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 0.8em;
+}
+
+
+#l2 li{
+  display: inline;
+}
+
+#l2{
+  margin-left:5px;
+  margin-top:5px;
+}
+
+div.tooltip:before {
+  position:absolute;
+  bottom:34px;
+  content:"";
+  border-bottom: 10px solid #009688;
+  border-top: 10px solid transparent ;
+  border-right: 10px solid transparent ;
+  border-left: 10px solid transparent ;
+}

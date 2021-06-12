@@ -29,7 +29,7 @@ function MainPage() {
                         src={img1}
                         alt="First slide"
                     />
-                    
+
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
                     <img
@@ -57,7 +57,7 @@ function MainPage() {
                     <Card.Body>
                         <Card.Title>Aceite de Coco con Presentación Compacta</Card.Title>
                         <Card.Text>
-                            Proporciona una facilidad al momento de su uso y acompañamiento, 
+                            Proporciona una facilidad al momento de su uso y acompañamiento,
                             ya que puede estar presente en tu vanity o en tus viajes mas importantes.
                         </Card.Text>
                     </Card.Body>
@@ -70,7 +70,7 @@ function MainPage() {
                     <Card.Body>
                         <Card.Title>Aceite de Coco con Presentación Media</Card.Title>
                         <Card.Text>
-                            Puede estar presente después de un día largo de trabajo, 
+                            Puede estar presente después de un día largo de trabajo,
                             ya que puede ayudarte a relajarte y ha disminuir los flujos de estrés.
                         </Card.Text>
                     </Card.Body>
@@ -83,7 +83,7 @@ function MainPage() {
                     <Card.Body>
                         <Card.Title>Aceite de Coco con Presentación Plus</Card.Title>
                         <Card.Text>
-                            Un producto ideal para compartirlo con la familia o con tu pareja, 
+                            Un producto ideal para compartirlo con la familia o con tu pareja,
                             así juntos podrán mantener un mejor cuidado en su salud y belleza.
                         </Card.Text>
                     </Card.Body>
@@ -92,8 +92,28 @@ function MainPage() {
                     </Card.Footer>
                 </Card>
             </CardDeck>
+            <br></br>
+            <br></br>
 
-            <div class="footer"></div>
+            <div className="container">
+                <ul class="social-icons" id="l2">
+                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <footer className="container">
+                <p className="float-right"><a href="#">Subir</a></p>
+                <p>&copy; {(new Date().getFullYear())} Scent House, Inc. &middot; <a href="#">Política de Privacidad</a> &middot; <a href="#">Términos</a></p>
+            </footer>
 
 
 
