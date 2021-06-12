@@ -28,7 +28,7 @@ function Pages() {
 
     return (
         <Switch>
-            <Route path="/" exact component={Products} />
+            <Route path="/" exact component={MainPage} />
             <Route path="/detail/:id" exact component={DetailProduct} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
@@ -49,6 +49,7 @@ function Pages() {
             <Route path="/saludbeneficios" exact component={SaludBeneficios}/>
             <Route path="/ayuda" exact component={Ayuda}/>
             <Route path="/contacto" exact component={Contacto}/>
+            <Route path="/store" exact component={Products}/>
 
 
             <Route path="*" exact component={NotFound} />

@@ -62,7 +62,7 @@ function Header() {
                 <li><Link to="/mainPage">Inicio</Link></li>
                 <li><Link to="/quienesSomos">Quienes Somos</Link></li>
                 <li><Link to="/saludbeneficios">Salud y Beneficios</Link></li>
-                <li><Link to="/">{isAdmin ? 'Productos' : 'Tienda'}</Link></li>
+                <li><Link to="/store">{isAdmin ? 'Productos' : 'Tienda'}</Link></li>
                 <li><Link to="/ayuda">Ayuda</Link></li>
                 <li><Link to="/contacto">Contacto</Link></li>
                 {isAdmin && adminRouter()}
