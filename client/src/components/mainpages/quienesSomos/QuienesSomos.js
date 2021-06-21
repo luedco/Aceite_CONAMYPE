@@ -33,23 +33,22 @@ function QuienesSomos() {
             <p>
                 <div class="separator"><h2>Emprendimiento</h2></div>
             </p>
-            <br></br>
 
             <div class="container-lg">
                 <div class="row">
                     <div class="col-sm-8">
-                        <p class="texto">
+                        <h5 class="texto">
                             “Scent House” es una empresa especializada en la elaboración de aceites esenciales,
                             especialmente de la fruta del coco. Se mantiene la idea de un concepto innovador y con diseño,
                             volviendo al negocio con una  presencia de adaptabilidad a las necesidades del consumidor,
                             para ello se presenta un producto natural.
                             <p></p>
-                            <p class="texto">
+                            <h5 class="texto">
                                 El concepto de esta empresa es diseñar, crear y producir aceites provenientes del coco tras pasar por
                                 cierto proceso que busca ser amigable con el medio ambiente, sin perder de vista el régimen natural del producto.
-                            </p>
+                            </h5>
 
-                        </p></div>
+                        </h5></div>
                     <div class="col-sm-4"><img src={img1} className="scentLogo"></img></div>
                 </div>
             </div>
@@ -93,50 +92,47 @@ function QuienesSomos() {
                     <Row>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src={imgs[0]} />
+                                <Card.Img variant="top" src={imgs[0]} style={{ height: 450, width: 300, margin: 'auto', display: 'block' }} />
                                 <Card.Body>
-                                    <Card.Title>Aceite de Coco con Presentación Compacta</Card.Title>
+                                    <Card.Title>Ing. Grace Flores</Card.Title>
                                     <Card.Text>
-                                        Proporciona una facilidad al momento de su uso y acompañamiento,
-                                        ya que puede estar presente en tu vanity o en tus viajes mas importantes.
+                                        Me gustó mucho que pude aplicar los conocimientos sobre mi carrera y adquirir nuevos sobre otros rubros. Además, conocí muy buena gente.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src={imgs[1]} />
+                                <Card.Img variant="top" src={imgs[1]} style={{ height: 450, width: 275, margin: 'auto', display: 'block' }} />
                                 <Card.Body>
-                                    <Card.Title>Aceite de Coco con Presentación Media</Card.Title>
+                                    <Card.Title>Ing. Sugeidi Pérez</Card.Title>
                                     <Card.Text>
-                                        Puede estar presente después de un día largo de trabajo,
-                                        ya que puede ayudarte a relajarte y ha disminuir los flujos de estrés.
+                                        La parte que más me ha gustado del emprendimiento es que he podido poner a prueba mis habilidades y lo aprendido hasta el día de hoy, aprendiendo siempre también de los demás y del trabajo en equipo.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
+                    <br></br><br></br>
                     <Row>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src={imgs[2]} />
+                                <Card.Img variant="top" src={imgs[2]} style={{ height: 450, width: 400, margin: 'auto', display: 'block' }} />
                                 <Card.Body>
-                                    <Card.Title>Aceite de Coco con Presentación Plus</Card.Title>
+                                    <Card.Title>Ing. Clery Girón</Card.Title>
                                     <Card.Text>
-                                        Un producto ideal para compartirlo con la familia o con tu pareja,
-                                        así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                                        El emprendimiento me ha gustado porque me ayuda a superarme a través de mis conocimientos y todo lo que puedo aportar para sacarlo adelante y se que entre todos nos hemos llegado a visualizar hasta dónde podemos llegar si trabajamos juntos.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src={imgs[3]} />
+                                <Card.Img variant="top" src={imgs[3]} style={{ height: 450, width: 300, margin: 'auto', display: 'block' }} />
                                 <Card.Body>
-                                    <Card.Title>Aceite de Coco con Presentación Plus</Card.Title>
+                                    <Card.Title>Ing. Gabriela Cierra</Card.Title>
                                     <Card.Text>
-                                        Un producto ideal para compartirlo con la familia o con tu pareja,
-                                        así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                                        Lo que más me ha gustado es poder poner en práctica todo lo aprendido durante la carrera y saber que esto que estamos haciendo al final les pueda servir a  otras personas.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -150,28 +146,28 @@ function QuienesSomos() {
                 <div class="separator"><h2>Mision y Vision</h2></div>
                 <CardDeck>
                     <Row>
-                    <Card className="cardMision">
-                        <Card.Body>
-                            <Card.Title>Mision</Card.Title>
-                            <Card.Text>
-                                Un producto ideal para compartirlo con la familia o con tu pareja,
-                                así juntos podrán mantener un mejor cuidado en su salud y belleza.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src={imgsMyV[0]} />
-                    </Card>
+                        <Card className="cardMision">
+                            <Card.Body>
+                                <Card.Title>Mision</Card.Title>
+                                <Card.Text>
+                                    Un producto ideal para compartirlo con la familia o con tu pareja,
+                                    así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Img variant="top" src={imgsMyV[0]} />
+                        </Card>
                     </Row>
                     <Row>
-                    <Card className="cardVision">
-                        <Card.Img variant="top" src={imgsMyV[1]} />
-                        <Card.Body>
-                            <Card.Title>Vision</Card.Title>
-                            <Card.Text>
-                                Un producto ideal para compartirlo con la familia o con tu pareja,
-                                así juntos podrán mantener un mejor cuidado en su salud y belleza.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                        <Card className="cardVision">
+                            <Card.Img variant="top" src={imgsMyV[1]} />
+                            <Card.Body>
+                                <Card.Title>Vision</Card.Title>
+                                <Card.Text>
+                                    Un producto ideal para compartirlo con la familia o con tu pareja,
+                                    así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Row>
                 </CardDeck>
 
