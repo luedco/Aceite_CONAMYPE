@@ -39,3 +39,11 @@
     height:15em;
     max-height: 20em;
 }
+
+.cardMision{
+    background-color: greenyellow;
+}
+
+.cardVision{
+    background-color: orange;
+}

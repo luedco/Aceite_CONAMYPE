@@ -21,6 +21,10 @@ let imgs = [
     'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1624248410/fundadores/Clery_i46sgc.jpg',
     'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1624248410/fundadores/Gabriela_itslea.jpg'
 ];
+let imgsMyV = [
+    'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1624249204/quienesSomos/Emprendimiento___logo__1_-removebg-preview_gxaz6f.png',
+    'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1624249203/quienesSomos/1_bzyanm.png'
+];
 
 function QuienesSomos() {
     return (
@@ -97,9 +101,6 @@ function QuienesSomos() {
                                         ya que puede estar presente en tu vanity o en tus viajes mas importantes.
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
                             </Card>
                         </Col>
                         <Col>
@@ -112,9 +113,6 @@ function QuienesSomos() {
                                         ya que puede ayudarte a relajarte y ha disminuir los flujos de estrés.
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
                             </Card>
                         </Col>
                     </Row>
@@ -129,9 +127,6 @@ function QuienesSomos() {
                                         así juntos podrán mantener un mejor cuidado en su salud y belleza.
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
                             </Card>
                         </Col>
                         <Col>
@@ -144,15 +139,42 @@ function QuienesSomos() {
                                         así juntos podrán mantener un mejor cuidado en su salud y belleza.
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
                             </Card>
                         </Col>
                     </Row>
 
 
                 </CardDeck>
+            </div>
+            <div className="containerMisionVision">
+                <div class="separator"><h2>Mision y Vision</h2></div>
+                <CardDeck>
+                    <Row>
+                    <Card className="cardMision">
+                        <Card.Body>
+                            <Card.Title>Mision</Card.Title>
+                            <Card.Text>
+                                Un producto ideal para compartirlo con la familia o con tu pareja,
+                                así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Img variant="top" src={imgsMyV[0]} />
+                    </Card>
+                    </Row>
+                    <Row>
+                    <Card className="cardVision">
+                        <Card.Img variant="top" src={imgsMyV[1]} />
+                        <Card.Body>
+                            <Card.Title>Vision</Card.Title>
+                            <Card.Text>
+                                Un producto ideal para compartirlo con la familia o con tu pareja,
+                                así juntos podrán mantener un mejor cuidado en su salud y belleza.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Row>
+                </CardDeck>
+
             </div>
 
         </div>
