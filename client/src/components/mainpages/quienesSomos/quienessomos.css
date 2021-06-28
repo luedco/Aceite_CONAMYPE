@@ -39,11 +39,30 @@
     height:15em;
     max-height: 20em;
 }
-
-.cardMision{
-    background-color: greenyellow;
+.cardImg{
+    max-width: 15em;
+    height: 20em;
+    max-height: 20em;
+    display: flex;
+     align-items: center;
+     text-align: center;
+}
+.containerFundadores{
+    padding: 2em;
 }
 
-.cardVision{
-    background-color: orange;
-}
+
+ .colText{
+     background-color: greenyellow;
+     height: 13em;
+     width: 15em;
+     display: flex;
+     align-items: center;
+     text-align: center;
+ }
+
+ .colImg{
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }

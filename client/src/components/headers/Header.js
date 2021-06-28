@@ -65,14 +65,14 @@ function Header() {
                 <li><Link to="/mainPage">Inicio</Link></li>
                 <li>
                     <Dropdown as={ButtonGroup}>
-                        <li><a><Link to="/quienesSomos">QUIENES SOMOS</Link></a>
+                        <li><a href="/quienesSomos"><Link to="/quienesSomos">QUIENES SOMOS</Link></a>
 
                         <Dropdown.Toggle split variant="primary-outline" id="dropdown" /></li>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Descripción</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Fundadores</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Misión y Visión</Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos#descripcionId">Descripción</Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos#fundadoresId">Fundadores</Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos#misionVisionId">Misión y Visión</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </li>
