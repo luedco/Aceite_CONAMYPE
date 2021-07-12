@@ -57,7 +57,6 @@ function QuienesSomos() {
                     <div class="col-sm-4"><img src={img1} className="scentLogo"></img></div>
                 </div>
             </div>
-            <br></br>
             <div className="qSomosPt2">
                 <CardDeck>
                     <Card>
@@ -93,11 +92,11 @@ function QuienesSomos() {
             </div>
             <div className="containerFundadores" id="fundadoresId">
                 <div class="separator"><h2>Fundadores</h2></div>
-                <CardDeck>
-                    <Row>
+                <CardDeck className="rowE">
+                    <Row className="colE">
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[0]} className="cardImg" />
                                 </Card>
                                 <Card>
@@ -112,7 +111,7 @@ function QuienesSomos() {
                         </Col>
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[1]} className="cardImg" />
                                 </Card>
                                 <Card>
@@ -127,10 +126,10 @@ function QuienesSomos() {
 
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="colE">
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[2]} className="cardImg" />
                                 </Card>
                                 <Card>
@@ -145,7 +144,7 @@ function QuienesSomos() {
                         </Col>
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[3]} className="cardImg" />
                                 </Card>
                                 <Card>
@@ -159,13 +158,13 @@ function QuienesSomos() {
 
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="colE">
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[4]} className="cardImg" />
                                 </Card>
-                                <Card>
+                                <Card className="cardFe">
                                     <Card.Body>
                                         <Card.Title>Ing. Luis Cortez</Card.Title>
                                         <Card.Text>
@@ -177,10 +176,10 @@ function QuienesSomos() {
                         </Col>
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[5]} className="cardImg" />
                                 </Card>
-                                <Card>
+                                <Card className="cardFe">
                                     <Card.Body>
                                         <Card.Title>Ing. Daniel Hernández</Card.Title>
                                         <Card.Text>
@@ -192,13 +191,13 @@ function QuienesSomos() {
 
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="colE">
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[6]} className="cardImg" />
                                 </Card>
-                                <Card>
+                                <Card className="cardFe">
                                     <Card.Body>
                                         <Card.Title>Lic. Marielos Najarro</Card.Title>
                                         <Card.Text>
@@ -210,10 +209,10 @@ function QuienesSomos() {
                         </Col>
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[7]} className="cardImg" />
                                 </Card>
-                                <Card>
+                                <Card className="cardFe">
                                     <Card.Body>
                                         <Card.Title>Lic. Ivannia Urquilla</Card.Title>
                                         <Card.Text>
@@ -225,17 +224,17 @@ function QuienesSomos() {
 
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="colE">
                         <Col>
                             <Row>
-                                <Card>
+                                <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[8]} className="cardImg" />
                                 </Card>
-                                <Card>
+                                <Card className="cardFe">
                                     <Card.Body>
                                         <Card.Title>Ing. Mario Martinez</Card.Title>
                                         <Card.Text>
-                                            Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo, y como al poder comunicarme con los diferentes compañeros, se facilitó el trabajo ya que me permiten mejorar lo aprendido y aprender cosas nuevas.
+                                            Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -252,14 +251,27 @@ function QuienesSomos() {
             </div>
             <div className="containerMisionVision">
                 <div class="colT">
-                Un producto ideal para compartirlo con la familia o con tu pareja,
-                        así juntos podrán mantener un mejor cuidado en su salud y belleza.    
+                <h5 class="colT">Mision</h5>
+                Ser una empresa dedicada a la elaboración y distribución de aceites esenciales de coco, 
+                con el fin de satisfacer las necesidades y expectativas de nuestros clientes, contribuyendo 
+                a la salud y bienestar de las personas. Se desea ofrecer un producto de calidad para todo tipo 
+                de gustos y necesidades, trabajando con responsabilidad y dedicación, caracterizandonos por ser un negocio con esencia a coco.
                 </div>
                 <div class="colI">
                     <img src={imgsMyV[0]} className="colImg"></img>
                 </div>
+                <div class="colI">
+                    <img src={imgsMyV[1]} className="colImg"></img>
+                </div>
+                <div class="colT">
+                <h5 class="colT">Vision</h5>
+                Consolidarnos como una empresa de mayor sostenibilidad dentro del mercado de aceites esenciales, 
+                permitiéndonos desarrollar una eficiente red de operaciones que permitan a la empresa expandirse 
+                a nivel nacional e incluso internacionalmente, con un excelente equipo de trabajo, que está 
+                comprometido a brindar la mejor calidad y servicio para la satisfacción de nuestros clientes.
+                </div>
             </div>
-{/*        <div className="containerMisionVison">
+            {/*        <div className="containerMisionVison">
                 <div class="colI">
                     <img src={imgsMyV[1]} className="colImg"></img>
                 </div>
