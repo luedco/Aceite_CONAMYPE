@@ -16,19 +16,29 @@
     
 }
 .col-sm-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5em;
 }
 
 .ucaLogo{
-    height: 20em;
-    width: 20em;
+    height: 100%;
+    width: 100%;
     text-align: center;
 
 }
 
+.contUcaLogo{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  background-color: red;
+ 
+}
 .scentLogo{
-    height: 20em;
-    width: 20em;
+    height: 100%;
+    width: 100%;
 }
 
 .ucalogtext{
@@ -40,29 +50,35 @@
     max-height: 20em;
 }
 .cardImg{
+    width: 10em;
     max-width: 15em;
     height: 20em;
     max-height: 20em;
-    display: flex;
-     align-items: center;
-     text-align: center;
 }
+
 .containerFundadores{
     padding: 2em;
 }
 
+.containerMisionVision{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    justify-items: center;
+    margin: 20px 0;
+    
+}
 
- .colText{
-     background-color: greenyellow;
-     height: 13em;
-     width: 15em;
-     display: flex;
-     align-items: center;
-     text-align: center;
- }
-
- .colImg{
-    display: flex;
-    align-items: center;
-    text-align: center;
- }
+.colImg{ 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-width: 20em;
+    max-width: 30em;
+}
+.colT{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: lemonchiffon;
+}

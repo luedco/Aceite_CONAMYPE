@@ -98,7 +98,7 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[0]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[0]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
@@ -113,7 +113,7 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[1]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[1]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
@@ -131,13 +131,13 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[2]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[2]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
                                         <Card.Title>Ing. Clery Giron</Card.Title>
                                         <Card.Text>
-                                        El emprendimiento me ha gustado porque me ayuda a superarme a través de mis conocimientos y todo lo que puedo aportar para sacarlo adelante y se que entre todos nos hemos llegado a visualizar hasta dónde podemos llegar si trabajamos juntos.
+                                            El emprendimiento me ha gustado porque me ayuda a superarme a través de mis conocimientos y todo lo que puedo aportar para sacarlo adelante y se que entre todos nos hemos llegado a visualizar hasta dónde podemos llegar si trabajamos juntos.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -146,7 +146,7 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[3]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[3]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
@@ -163,7 +163,7 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[4]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[4]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
@@ -178,7 +178,7 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[5]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[5]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
@@ -196,13 +196,13 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[6]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[6]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
                                         <Card.Title>Lic. Marielos Najarro</Card.Title>
                                         <Card.Text>
-                                        El proyecto resultó ser una puerta de aprendizaje y de retroalimentación, de los aspectos que ya conozco de mi carrera. Asimismo, me gusto compartir mis conocimientos con otras áreas que se complementan, con el fin de concretar y crear un emprendimiento exitoso. 
+                                            El proyecto resultó ser una puerta de aprendizaje y de retroalimentación, de los aspectos que ya conozco de mi carrera. Asimismo, me gusto compartir mis conocimientos con otras áreas que se complementan, con el fin de concretar y crear un emprendimiento exitoso.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -211,13 +211,13 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[7]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[7]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
                                         <Card.Title>Lic. Ivannia Urquilla</Card.Title>
                                         <Card.Text>
-                                        En el desarrollo del emprendimiento me ha gustado llevar a la práctica todos los conocimientos adquiridos a lo largo de la carrera, y el adquirir conocimientos de otras áreas como lo son la ingeniería. Siempre soy del pensamiento que nunca dejamos de aprender.
+                                            En el desarrollo del emprendimiento me ha gustado llevar a la práctica todos los conocimientos adquiridos a lo largo de la carrera, y el adquirir conocimientos de otras áreas como lo son la ingeniería. Siempre soy del pensamiento que nunca dejamos de aprender.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -229,13 +229,13 @@ function QuienesSomos() {
                         <Col>
                             <Row>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[8]} className="cardImg"/>
+                                    <Card.Img variant="top" src={imgs[8]} className="cardImg" />
                                 </Card>
                                 <Card>
                                     <Card.Body>
                                         <Card.Title>Ing. Mario Martinez</Card.Title>
                                         <Card.Text>
-                                        Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo, y como al poder comunicarme con los diferentes compañeros, se facilitó el trabajo ya que me permiten mejorar lo aprendido y aprender cosas nuevas.
+                                            Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo, y como al poder comunicarme con los diferentes compañeros, se facilitó el trabajo ya que me permiten mejorar lo aprendido y aprender cosas nuevas.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -250,18 +250,24 @@ function QuienesSomos() {
 
                 </CardDeck>
             </div>
-            <div class="row">
-                <div class="col">
+            <div className="containerMisionVision">
+                <div class="colT">
+                Un producto ideal para compartirlo con la familia o con tu pareja,
+                        así juntos podrán mantener un mejor cuidado en su salud y belleza.    
+                </div>
+                <div class="colI">
+                    <img src={imgsMyV[0]} className="colImg"></img>
+                </div>
+            </div>
+{/*        <div className="containerMisionVison">
+                <div class="colI">
+                    <img src={imgsMyV[1]} className="colImg"></img>
+                </div>
+                <div class="colT">
                     <p className="colText">Un producto ideal para compartirlo con la familia o con tu pareja,
                         así juntos podrán mantener un mejor cuidado en su salud y belleza.</p>
                 </div>
-                <div class="col">
-                    <img src={imgsMyV[0]} className="colImg"></img>
-                </div>
-                <div class="w-100"></div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
+    </div> */}
 
         </div>
     )
