@@ -14,6 +14,7 @@ import qSomos1 from './imagenes/qsSomos1.jpg';
 import qSomos2 from './imagenes/qsSomos2.jpg';
 import qSomos3 from './imagenes/qsSomos3.jpeg';
 import ucaLogo from './imagenes/ucaLogo.jpg';
+import Footer from '../footer/Footer'
 
 
 
@@ -77,18 +78,7 @@ function QuienesSomos() {
 
                 </div>
             </div>
-            
-
-            {/*        <div className="containerMisionVison">
-                <div class="colI">
-                    <img src={imgsMyV[1]} className="colImg"></img>
-                </div>
-                <div class="colT">
-                    <p className="colText">Un producto ideal para compartirlo con la familia o con tu pareja,
-                        así juntos podrán mantener un mejor cuidado en su salud y belleza.</p>
-                </div>
-    </div> */}
-
+            <Footer></Footer>
         </div>
     )
 }

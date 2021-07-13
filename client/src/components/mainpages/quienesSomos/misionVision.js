@@ -7,6 +7,8 @@ let imgsMyV = [
 ];
 function MisonVision(){
     return(
+        <div>
+             <div class="separator"><h2>Mision y Vision</h2></div>
         <div className="containerMisionVision">
         <div class="colT">
         <h5 class="colT">Mision</h5>
@@ -28,6 +30,7 @@ function MisonVision(){
         a nivel nacional e incluso internacionalmente, con un excelente equipo de trabajo, que está 
         comprometido a brindar la mejor calidad y servicio para la satisfacción de nuestros clientes.
         </div>
+    </div>
     </div>
     )
 }

@@ -39,7 +39,9 @@ function fundadores(){
                                 </Card>
                             </Row>
                         </Col>
-                        <Col>
+                    </Row>
+                    <Row>
+                    <Col>
                             <Row>
                                 <Card className="cardF">
                                     <Card.Img variant="top" src={imgs[1]} className="cardImg" />
