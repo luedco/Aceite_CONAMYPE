@@ -11,6 +11,8 @@ import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
 import QuienesSomos from './quienesSomos/QuienesSomos'
+import Fundadores from './quienesSomos/fundadores'
+import MisonVision from './quienesSomos/misionVision'
 import MainPage from './mainPage/MainPage'
 import SaludBeneficios from './saludBeneficios/SaludBeneficios'
 import Ayuda from './ayuda/Ayuda'
@@ -44,6 +46,8 @@ function Pages() {
             <Route path="/cart" exact component={Cart} />
 
             <Route path="/quienesSomos" exact component={QuienesSomos}/>
+            <Route path="/quienesSomos/fundadores" exact component={Fundadores}/>
+            <Route path="/quienesSomos/misionVision" exact component={MisonVision}/>
 
             <Route path="/mainPage" exact component={MainPage}/>
             <Route path="/saludbeneficios" exact component={SaludBeneficios}/>

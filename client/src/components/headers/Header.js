@@ -71,8 +71,8 @@ function Header() {
 
                         <Dropdown.Menu>
                             <Dropdown.Item href="/quienesSomos#descripcionId">Descripción</Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos#fundadoresId">Fundadores</Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos#misionVisionId">Misión y Visión</Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos/fundadores">Fundadores</Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos/misionVision">Misión y Visión</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </li>
