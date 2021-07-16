@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-
+import './Footer.css'
 function Footer() {
     return (
         <div>
@@ -16,8 +16,8 @@ function Footer() {
             <br></br>
 
             <footer className="container">
-                <p className="float-right"><a href="#">Subir</a></p>
-                <p>&copy; {(new Date().getFullYear())} Scent House, Inc. &middot; <a href="#">Política de Privacidad</a> &middot; <a href="#">Términos</a></p>
+                <p className="float-right"><a class="subirBtn"href="#">Subir</a></p>
+                <p>&copy; {(new Date().getFullYear())} Scent House, Inc. &middot; <a href="#" class="terms">Política de Privacidad</a> &middot; <a class="terms" href="#">Términos</a></p>
             </footer>
         </div>
     )

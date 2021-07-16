@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import Footer from '../footer/Footer'
+
+let imgs = ['https://res.cloudinary.com/dwwgiwtgh/image/upload/v1626410105/ScentHouse/iconoCocos_dthghg.png'];
 
 function Login() {
     const [user, setUser] = useState({
@@ -26,9 +29,10 @@ function Login() {
     }
 
     return (
-        <div className="login-page">
+        <div>
+                    <div className="login-page">
             <form onSubmit={loginSubmit}>
-                <h2>Login</h2>
+                <h2>¡Logueate en tu cuenta!<img src={imgs[0]} alt="logo" className="imgCoco"/></h2>
                 <input type="email" name="email" required
                 placeholder="Email" value={user.email} onChange={onChangeInput} />
 
@@ -40,6 +44,8 @@ function Login() {
                     <Link to="/register">Register</Link>
                 </div>
             </form>
+        </div>
+        <Footer></Footer>
         </div>
     )
 }
