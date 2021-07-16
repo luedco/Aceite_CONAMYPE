@@ -1,5 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react'
 import './creditCard.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
 function CreditCard() {
     return (
         
@@ -54,10 +57,6 @@ function CreditCard() {
                                 </form>
                             </div>
                         </div>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
-                            </li>
-                        </ul>
                         <br />
                         <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
                     </div>
