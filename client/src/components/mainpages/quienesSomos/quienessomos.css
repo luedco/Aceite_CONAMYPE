@@ -23,9 +23,10 @@
 }
 
 .ucaLogo{
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  height: 20em;
+  width: 20em;
+  max-width: 25em;
+  max-height: 25em;
 
 }
 
@@ -37,8 +38,10 @@
  
 }
 .scentLogo{
-    height: 100%;
-    width: 100%;
+    height: 20em;
+    width: 20em;
+    max-width: 25em;
+    max-height: 25em;
 }
 
 .ucalogtext{
@@ -118,10 +121,20 @@
     }
   }
 
-  .cardFe{
+  .cardFeGreen{
     height: 350px;
     width: 400px;
     background-color: #C3F2CD;
+  }
+  .cardFeBrown{
+    height: 350px;
+    width: 400px;
+    background-color: #DAC2B0
+  }
+  .cardFeYellow{
+    height: 350px;
+    width: 400px;
+    background-color: #FFF7A5
   }
 
   .colTMision{

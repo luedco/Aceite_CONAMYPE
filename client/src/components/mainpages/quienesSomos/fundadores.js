@@ -30,7 +30,7 @@ function fundadores() {
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[0]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeGreen">
                                 <Card.Body>
                                     <Card.Title>Ing. Grace Flores</Card.Title>
                                     <Card.Text>
@@ -44,13 +44,14 @@ function fundadores() {
                         </Row>
                     </Col>
                 </Row>
+                <br></br><br></br>
                 <Row>
                     <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[1]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeBrown">
                                 <Card.Body>
                                     <Card.Title>Ing. Sugeidi Pérez</Card.Title>
                                     <Card.Text>
@@ -65,14 +66,14 @@ function fundadores() {
 
                     </Col>
                 </Row>
-                <br></br>
+                <br></br><br></br>
                 <Row className="colE">
                     <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[4]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeYellow">
                                 <Card.Body>
                                     <Card.Title>Ing. Luis Cortez</Card.Title>
                                     <Card.Text>
@@ -85,12 +86,15 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
-                    <Col>
+                </Row>
+                <br></br><br></br>
+                <Row>
+                <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[5]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeGreen">
                                 <Card.Body>
                                     <Card.Title>Ing. Daniel Hernández</Card.Title>
                                     <Card.Text>
@@ -102,17 +106,16 @@ function fundadores() {
                                 </Card.Footer>
                             </Card>
                         </Row>
-
                     </Col>
                 </Row>
-                <br></br>
+                <br></br><br></br>
                 <Row className="colE">
                     <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[6]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeBrown">
                                 <Card.Body>
                                     <Card.Title>Lic. Marielos Najarro</Card.Title>
                                     <Card.Text>
@@ -125,12 +128,15 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
-                    <Col>
+                </Row>
+                <br></br><br></br>
+                <Row>
+                <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[7]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeYellow">
                                 <Card.Body>
                                     <Card.Title>Lic. Ivannia Urquilla</Card.Title>
                                     <Card.Text>
@@ -145,14 +151,14 @@ function fundadores() {
                         <br></br>
                     </Col>
                 </Row>
-                <br></br>
+                <br></br><br></br>
                 <Row className="colE">
                     <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[8]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFe">
+                            <Card className="cardFeGreen">
                                 <Card.Body>
                                     <Card.Title>Ing. Mario Martinez</Card.Title>
                                     <Card.Text>
@@ -162,14 +168,6 @@ function fundadores() {
                                 <Card.Footer>
                                     <small className="text-muted"></small>
                                 </Card.Footer>
-                            </Card>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <Card className="cardF"> </Card>
-                            <Card className="cardFe">
-
                             </Card>
                         </Row>
                     </Col>
