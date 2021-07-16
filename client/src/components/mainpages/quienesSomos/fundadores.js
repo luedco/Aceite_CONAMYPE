@@ -23,37 +23,10 @@ function fundadores() {
     return (
         <div className="containerFundadores" id="fundadoresId">
             <div class="separator"><h2>Fundadores</h2></div>
-            <CardDeck>
-                <Card>
-                    <Card.Img variant="top" src={imgs[0]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }}></Card.Img>
-                    <Card.Body>
-                        <Card.Title>Ing. Grace Flores</Card.Title>
-                        <Card.Text>
-                            Me gustó mucho que pude aplicar los conocimientos sobre mi carrera y adquirir nuevos sobre otros rubros. Además, conocí muy buena gente.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted"></small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src={imgs[1]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
-                    <Card.Body>
-                        <Card.Title>Ing. Sugeidi Pérez</Card.Title>
-                        <Card.Text>
-                            La parte que más me ha gustado del emprendimiento es que he podido poner a prueba mis habilidades y lo aprendido hasta el día de hoy, aprendiendo siempre también de los demás y del trabajo en equipo.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted"></small>
-                    </Card.Footer>
-                </Card>
-            </CardDeck>
-            <br></br>
             <CardDeck className="rowE">
                 <Row className="colE">
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[0]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
@@ -70,6 +43,8 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
+                </Row>
+                <Row>
                     <Col>
                         <Row>
                             <Card className="cardF">

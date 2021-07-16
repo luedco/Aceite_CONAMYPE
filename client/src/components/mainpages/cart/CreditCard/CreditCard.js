@@ -10,7 +10,7 @@ function CreditCard() {
             
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title">
@@ -35,7 +35,7 @@ function CreditCard() {
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-7 col-md-7">
+                                        <div class="col-xs-7">
                                             <div class="form-group">
                                                 <label for="expityMonth">
                                                     EXPIRY DATE</label>
@@ -46,7 +46,7 @@ function CreditCard() {
                                                     <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 col-md-5 pull-right">
+                                        <div class="col-xs-5 pull-right">
                                             <div class="form-group">
                                                 <label for="cvCode">
                                                     CV CODE</label>
@@ -58,7 +58,7 @@ function CreditCard() {
                             </div>
                         </div>
                         <br />
-                        <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+                        <a href="#" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
                     </div>
                 </div>
             </div>

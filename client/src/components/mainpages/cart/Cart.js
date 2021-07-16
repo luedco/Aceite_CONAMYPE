@@ -3,6 +3,7 @@ import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
 import PaypalButton from './PaypalButton'
 import CreditCard from './CreditCard/CreditCard'
+import Footer from '../footer/Footer'
 function Cart() {
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
@@ -92,7 +93,6 @@ function Cart() {
 
                             <h3>$ {product.price * product.quantity}</h3>
                             <p>{product.description}</p>
-                            <p>{product.content}</p>
 
                             <div className="amount">
                                 <button onClick={() => decrement(product._id)}> - </button>
@@ -110,12 +110,14 @@ function Cart() {
             }
 
             <div className="total">
-                <h3>Total: $ {total}</h3>
+                <h3>Total a pagar: $ {total}</h3>
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
             </div>
         <CreditCard></CreditCard>
+        <br></br>
+        <Footer></Footer>
         </div>
     )
 }

@@ -11,7 +11,7 @@ function MisonVision() {
         <div>
             <div class="separator"><h2>Mision y Vision</h2></div>
             <div className="containerMisionVision">
-                <div class="colT">
+                <div class="colTMision">
                     <h5 class="colT">Mision</h5>
                     Ser una empresa dedicada a la elaboración y distribución de aceites esenciales de coco,
                     con el fin de satisfacer las necesidades y expectativas de nuestros clientes, contribuyendo
@@ -24,7 +24,7 @@ function MisonVision() {
                 <div class="colI">
                     <img src={imgsMyV[1]} className="colImg"></img>
                 </div>
-                <div class="colT">
+                <div class="colTVision">
                     <h5 class="colT">Vision</h5>
                     Consolidarnos como una empresa de mayor sostenibilidad dentro del mercado de aceites esenciales,
                     permitiéndonos desarrollar una eficiente red de operaciones que permitan a la empresa expandirse
