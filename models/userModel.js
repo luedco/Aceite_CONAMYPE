@@ -6,6 +6,15 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    lastName:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    dob:{
+        type: Date,
+        required: true
+    },
     email: {
         type: String,
         required: true,

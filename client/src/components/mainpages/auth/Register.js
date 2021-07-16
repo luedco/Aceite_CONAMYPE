@@ -7,7 +7,7 @@ let imgs = ['https://res.cloudinary.com/dwwgiwtgh/image/upload/v1626410105/Scent
 
 function Register() {
     const [user, setUser] = useState({
-        name: '', email: '', password: ''
+        name: '', lastName:'', dob:'',email: '', password: ''
     })
 
     const onChangeInput = e => {
@@ -37,10 +37,10 @@ function Register() {
                     <input type="text" name="name" required
                         placeholder="Name" value={user.name} onChange={onChangeInput} />
 
-                    <input type="text" name="LastName" required
-                        placeholder="Last Name" />
+                    <input type="text" name="lastName" required
+                        placeholder="Last Name" value={user.lastName} onChange={onChangeInput}/>
 
-                    <input type="date" id="dob" />
+                    <input type="date" name="dob" required value={user.dob} onChange={onChangeInput}/>
 
                     <input type="email" name="email" required
                         placeholder="Email" value={user.email} onChange={onChangeInput} />
