@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Badge from 'react-bootstrap/Badge'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from '../footer/Footer'
 
 
