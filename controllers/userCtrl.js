@@ -9,11 +9,14 @@ const userCtrl = {
             const {name, lastName, dob, email, password} = req.body;
 
             const user = await Users.findOne({email})
-            if(user) return res.status(400).json({msg: "The email already exists."})
+            if(user) return res.status(400).json({msg: "Ese correo ya existe."})
 
+            //if((Date.now - dob)<18)
+            //return res.status(400).json({msg: "Debes de tener por lo menos 18 años."})
+            
             if(password.length < 6) 
-                return res.status(400).json({msg: "Password is at least 6 characters long."})
-
+                return res.status(400).json({msg: "La contraseña debe de tener 6 caracteres como mínimo."})
+            
             // Password Encryption
             const passwordHash = await bcrypt.hash(password, 10)
             const newUser = new Users({

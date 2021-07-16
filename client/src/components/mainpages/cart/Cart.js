@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
 import PaypalButton from './PaypalButton'
-
+import CreditCard from './CreditCard/CreditCard'
 function Cart() {
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
@@ -115,6 +115,7 @@ function Cart() {
                 total={total}
                 tranSuccess={tranSuccess} />
             </div>
+        <CreditCard></CreditCard>
         </div>
     )
 }
