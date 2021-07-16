@@ -20,7 +20,7 @@ function Contacto() {
             <Container fluid="md">
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
                 <Row className="justify-content-md-center">
-                    <Col md="auto" >
+                    <Col xs={3} md = "4">
                         <Container>
                             <h3>
                                 <Badge bg="secondary">Llámanos</Badge>
@@ -35,7 +35,7 @@ function Contacto() {
                             </h5></Container>
 
                     </Col>
-                    <Col md="auto">
+                    <Col xs={3} md = "4">
                         <Container><h3>
                             <Badge bg="secondary">Horario:</Badge>
                         </h3></Container>
@@ -52,7 +52,7 @@ function Contacto() {
                             <Badge bg="secondary">8:00 a.m - 12:00 p.m</Badge>
                         </h5></Container>
                     </Col>
-                    <Col md="auto">
+                    <Col xs={3} md = "4">
                         <Container><Form>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label><Badge bg="secondary">Nombre:</Badge></Form.Label>
