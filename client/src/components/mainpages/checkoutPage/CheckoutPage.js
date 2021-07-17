@@ -1,9 +1,11 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
-import PaypalButton from './PaypalButton'
+import CreditCard from './CreditCard/CreditCard'
+import PaypalButton from '../cart/PaypalButton'
 import Footer from '../footer/Footer'
-function Cart() {
+
+function CheckoutPage(){
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
@@ -21,13 +23,6 @@ function Cart() {
         getTotal()
 
     },[cart])
-
-    const addToCart = async (cart) =>{
-        await axios.patch('/user/addcart', {cart}, {
-            headers: {Authorization: token}
-        })
-    }
-
 
     const increment = (id) =>{
         cart.forEach(item => {
@@ -64,41 +59,27 @@ function Cart() {
         }
     }
 
-    const tranSuccess = async(payment) => {
-        const {paymentID, address} = payment;
-
-        await axios.post('/api/payment', {cart, paymentID, address}, {
+    const addToCart = async (cart) =>{
+        await axios.patch('/user/addcart', {cart}, {
             headers: {Authorization: token}
         })
-
-        setCart([])
-        addToCart([])
-        alert("You have successfully placed an order.")
     }
-
-
-    if(cart.length === 0) 
-        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
 
     return (
         <div>
+            <h2>Pagina para pagar</h2>
             {
                 cart.map(product => (
                     <div className="detail cart" key={product._id}>
-                        <img src={product.images.url} alt="" />
-
                         <div className="box-detail">
                             <h2>{product.title}</h2>
 
                             <h3>$ {product.price * product.quantity}</h3>
-                            <p>{product.description}</p>
-
                             <div className="amount">
                                 <button onClick={() => decrement(product._id)}> - </button>
                                 <span>{product.quantity}</span>
                                 <button onClick={() => increment(product._id)}> + </button>
                             </div>
-                            
                             <div className="delete" 
                             onClick={() => removeProduct(product._id)}>
                                 X
@@ -112,16 +93,17 @@ function Cart() {
                 <h3>Total a pagar: $ {total}</h3>
                 <PaypalButton
                 total={total}
-                tranSuccess={tranSuccess} />
+                />
             </div>
-        <br></br>
-        <div>
-            <a href="/checkout" class="btn btn-success btn-lg btn-block" role="button">Ir a Último Paso</a>
-        </div>
+            <div>
+
+            </div>
+            <CreditCard></CreditCard> 
         <br></br>
         <Footer></Footer>
         </div>
     )
 }
 
-export default Cart
+
+export default CheckoutPage
