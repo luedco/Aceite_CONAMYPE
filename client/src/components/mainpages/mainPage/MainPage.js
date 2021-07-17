@@ -22,7 +22,7 @@ function MainPage() {
             <h2>
 
             </h2>
-            <Carousel>
+            <Carousel  style={{ whiteSpace: 'pre-wrap', textAlign:'center', fontFamily: '"Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif'}}>
                 <Carousel.Item interval={1000}>
                     <img
                         className="d-block w-100"
@@ -51,7 +51,7 @@ function MainPage() {
                 <div class="separator"><h2>COCONUT LINE</h2></div>
             </p>
             <br></br>
-            <CardDeck>
+            <CardDeck style={{ whiteSpace: 'pre-wrap', textAlign:'justify', fontFamily: '"Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif'}}>
                 <Card>
                     <Card.Img variant="top" src={ml10} />
                     <Card.Body>

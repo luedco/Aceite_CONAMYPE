@@ -26,25 +26,37 @@ function QuienesSomos() {
             <p>
                 <div class="separator"><h2>Emprendimiento</h2></div>
             </p>
+            <Card>
+                <div class="container-lg" id="descripcionId">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <Card style={{ justifyContent: 'center' }}>
+                                <Card.Body>
+                                    <Card.Text>
+                                        “Scent House” es una empresa especializada en la elaboración de aceites esenciales,
+                                        especialmente de la fruta del coco. Se mantiene la idea de un concepto innovador y con diseño,
+                                        volviendo al negocio con una  presencia de adaptabilidad a las necesidades del consumidor,
+                                        para ello se presenta un producto natural.
+                                    </Card.Text>
+                                    <Card.Text>
+                                        El concepto de esta empresa es diseñar, crear y producir aceites provenientes del coco tras pasar por
+                                        cierto proceso que busca ser amigable con el medio ambiente, sin perder de vista el régimen natural del producto.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                        <div class="col-sm-4">
+                            <CardDeck>
+                                <Card>
+                                    <Card.Img className="cardsImg" variant="top" src={img1} />
+                                </Card>
 
-            <div class="container-lg" id="descripcionId">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h5 class="texto">
-                            “Scent House” es una empresa especializada en la elaboración de aceites esenciales,
-                            especialmente de la fruta del coco. Se mantiene la idea de un concepto innovador y con diseño,
-                            volviendo al negocio con una  presencia de adaptabilidad a las necesidades del consumidor,
-                            para ello se presenta un producto natural.
-                            <p></p>
-                            <h5 class="texto">
-                                El concepto de esta empresa es diseñar, crear y producir aceites provenientes del coco tras pasar por
-                                cierto proceso que busca ser amigable con el medio ambiente, sin perder de vista el régimen natural del producto.
-                            </h5>
-
-                        </h5></div>
-                    <div class="col-sm-4"><img src={img1} className="scentLogo"></img></div>
+                            </CardDeck>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </Card>
+            <br></br>
             <div className="qSomosPt2">
                 <CardDeck>
                     <Card>
@@ -59,25 +71,36 @@ function QuienesSomos() {
                 </CardDeck>
             </div>
             <br></br>
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src={ucaLogo} className="ucaLogo"></img>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="containerucalogtext">
-                            <h5 className="ucalogtext">
-                                La idea de este negocio nace de un grupo de emprendedores jóvenes,
-                                de la Universidad Centroamericana José Simeón Cañas - UCA,
-                                dichos emprendedores son de diferentes facultades que ponen
-                                a su servicio su conocimiento para poder desarrollar el producto estrella,
-                                que es el aceite escencial de cooc, en diferentes presentaciones.
-                            </h5>
-                        </div>
-                    </div>
+            <Card>
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <CardDeck>
+                                <Card>
+                                    <Card.Img className="cardsImg" variant="top" src={ucaLogo} />
+                                </Card>
 
+                            </CardDeck>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="containerucalogtext">
+                                <Card style={{ justifyContent: 'center' }}>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            La idea de este negocio nace de un grupo de emprendedores jóvenes,
+                                            de la Universidad Centroamericana José Simeón Cañas - UCA,
+                                            dichos emprendedores son de diferentes facultades que ponen
+                                            a su servicio su conocimiento para poder desarrollar el producto estrella,
+                                            que es el aceite escencial de cooc, en diferentes presentaciones.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
+            </Card>
             <Footer></Footer>
         </div>
     )
