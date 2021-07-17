@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Logo from './images/iconoCocos.png'
 import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
@@ -61,29 +62,27 @@ function Header() {
                 </h1>
             </div>
 
-            <ul style={styleMenu}>
-                <li><Link to="/mainPage">Inicio</Link></li>
-                <li>
-                    <Dropdown as={ButtonGroup}>
-                        <li><a href="/quienesSomos"><Link to="/quienesSomos">QUIENES SOMOS</Link></a>
+            <ul style={styleMenu} style={{}}>
+                <li><Button variant="primary-outline"><Link to="/mainPage">Inicio</Link></Button></li>
+                <li><Dropdown>
+                    <Dropdown.Toggle variant="primary-outline" id="dropdown-basic">
+                        ¿QUIENES SOMOS?
+                    </Dropdown.Toggle>
 
-                        <Dropdown.Toggle split variant="primary-outline" id="dropdown" /></li>
-
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="/quienesSomos#descripcionId">Descripción</Dropdown.Item>
+                    <Dropdown.Menu>
+                    <Dropdown.Item href="/quienesSomos#descripcionId">Descripción</Dropdown.Item>
                             <Dropdown.Item href="/quienesSomos/fundadores">Fundadores</Dropdown.Item>
                             <Dropdown.Item href="/quienesSomos/misionVision">Misión y Visión</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </li>
-                <li><Link to="/saludbeneficios">Salud y Beneficios</Link></li>
-                <li><Link to="/store">{isAdmin ? 'Productos' : 'Tienda'}</Link></li>
-                <li><Link to="/ayuda">Ayuda</Link></li>
-                <li><Link to="/contacto">Contacto</Link></li>
+                    </Dropdown.Menu>
+                </Dropdown></li>
+                <li><Button variant="primary-outline"><Link to="/saludbeneficios">Salud y Beneficios</Link></Button></li>
+                <li><Button variant="primary-outline"><Link to="/store">{isAdmin ? 'Productos' : 'Tienda'}</Link></Button></li>
+                <li><Button variant="primary-outline"><Link to="/ayuda">Ayuda</Link></Button></li>
+                <li><Button variant="primary-outline"><Link to="/contacto">Contacto</Link></Button></li>
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login 👤 Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Button variant="primary-outline"><Link to="/login">Login 👤 Register</Link></Button></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>

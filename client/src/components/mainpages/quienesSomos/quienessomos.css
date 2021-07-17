@@ -12,14 +12,14 @@
 
 
 .col-sm-8{
-    padding: 10em;
+    padding: 3em;
     
 }
 .col-sm-4{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5em;
+    padding: 3em;
 }
 
 .ucaLogo{
@@ -143,3 +143,4 @@
   .colTVision{
     background-color: #D1A487;
   }
+

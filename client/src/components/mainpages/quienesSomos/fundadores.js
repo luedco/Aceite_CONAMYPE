@@ -43,9 +43,6 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
-                </Row>
-                <br></br><br></br>
-                <Row>
                     <Col>
                         <Row>
                             <Card className="cardF">
@@ -73,7 +70,7 @@ function fundadores() {
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[4]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFeYellow">
+                            <Card className="cardFeBrown">
                                 <Card.Body>
                                     <Card.Title>Ing. Luis Cortez</Card.Title>
                                     <Card.Text>
@@ -86,10 +83,7 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
-                </Row>
-                <br></br><br></br>
-                <Row>
-                <Col>
+                    <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[5]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
@@ -115,7 +109,7 @@ function fundadores() {
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[6]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFeBrown">
+                            <Card className="cardFeGreen">
                                 <Card.Body>
                                     <Card.Title>Lic. Marielos Najarro</Card.Title>
                                     <Card.Text>
@@ -128,10 +122,7 @@ function fundadores() {
                             </Card>
                         </Row>
                     </Col>
-                </Row>
-                <br></br><br></br>
-                <Row>
-                <Col>
+                    <Col>
                         <Row>
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[7]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
@@ -158,7 +149,7 @@ function fundadores() {
                             <Card className="cardF">
                                 <Card.Img variant="top" src={imgs[8]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
                             </Card>
-                            <Card className="cardFeGreen">
+                            <Card className="cardFeYellow">
                                 <Card.Body>
                                     <Card.Title>Ing. Mario Martinez</Card.Title>
                                     <Card.Text>

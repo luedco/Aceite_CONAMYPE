@@ -18,51 +18,54 @@ function Contacto() {
             <br></br>
             <Container fluid="md">
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
-                <Row className="justify-content-md-center">
-                    <Col xs={3} md = "4">
-                        <Container>
-                            <h3>
-                                <Badge bg="secondary">Llámanos</Badge>
+                <Row className="">
+                    <Col xs={4}>
+                        <Row>
+                            <Container>
+                                <h3>
+                                    <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Llámanos:</Badge>
+                                </h3></Container>
+                            <Container>
+                                <h5>
+                                    <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Oficinas Centrales Sonsonate: 2240-0046</Badge>
+                                </h5></Container>
+                            <Container>
+                                <h5>
+                                    <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Oficinas Secundarias: 2240-0047</Badge>
+                                </h5></Container>
+                        </Row>
+                        <Row>
+                            <Container><h3>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Horario:</Badge>
                             </h3></Container>
-                        <Container>
-                            <h5>
-                                <Badge bg="secondary">Oficinas Centrales Sonsonate: 2240-0046</Badge>
+                            <Container><h5>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Horarios de lunes a viernes:</Badge>
                             </h5></Container>
-                        <Container>
-                            <h5>
-                                <Badge bg="secondary">Oficinas Secundarias: 2240-0047</Badge>
+                            <Container><h5>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>8:00 a.m - 5:00 p.m</Badge>
                             </h5></Container>
+                            <Container><h5>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Horarios de sabado:</Badge>
+                            </h5></Container>
+                            <Container><h5>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>8:00 a.m - 12:00 p.m</Badge>
+                            </h5></Container>
+                        </Row>
 
                     </Col>
-                    <Col xs={3} md = "4">
-                        <Container><h3>
-                            <Badge bg="secondary">Horario:</Badge>
-                        </h3></Container>
-                        <Container><h5>
-                            <Badge bg="secondary">Horarios de lunes a viernes:</Badge>
-                        </h5></Container>
-                        <Container><h5>
-                            <Badge bg="secondary">8:00 a.m - 5:00 p.m</Badge>
-                        </h5></Container>
-                        <Container><h5>
-                            <Badge bg="secondary">Horarios de sabado:</Badge>
-                        </h5></Container>
-                        <Container><h5>
-                            <Badge bg="secondary">8:00 a.m - 12:00 p.m</Badge>
-                        </h5></Container>
-                    </Col>
-                    <Col xs={3} md = "4">
+                    
+                    <Col xs={8}>
                         <Container><Form>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label><Badge bg="secondary">Nombre:</Badge></Form.Label>
+                                <Form.Label><Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Nombre:</Badge></Form.Label>
                                 <Form.Control type="text" placeholder="Ingresa tu nombre" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label><Badge bg="secondary">Email:</Badge></Form.Label>
+                                <Form.Label><Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Email:</Badge></Form.Label>
                                 <Form.Control type="email" placeholder="nombre@ejemplo.com" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label><Badge bg="secondary">Comentario:</Badge></Form.Label>
+                                <Form.Label><Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Comentario:</Badge></Form.Label>
                                 <Form.Control as="textarea" rows={2} />
                                 <br></br>
                                 <Button variant="primary" type="submit">
@@ -77,19 +80,19 @@ function Contacto() {
                     <Col xs={6}>
                         <Container>
                             <h3>
-                                <Badge bg="secondary">Ubicación Oficinas Centrales Sonsonate:</Badge>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Ubicación Oficinas Centrales Sonsonate:</Badge>
                             </h3></Container>
                         <Container>
                             <h5>
-                                <Badge bg="secondary"> Departamento de Sonsonate, colonia El Balsamar, pasaje 2</Badge>
+                                <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}> Departamento de Sonsonate, colonia El Balsamar, pasaje 2</Badge>
                             </h5></Container>
                     </Col>
                     <Col xs={6}>
                         <Container><h3>
-                            <Badge bg="secondary">Ubicación Oficinas Secundarias:</Badge>
+                            <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Ubicación Oficinas Secundarias:</Badge>
                         </h3></Container>
                         <Container><h5>
-                            <Badge bg="secondary">Colonia Roma 67 Av. Sur 13-B, San Salvador, El Salvador</Badge>
+                            <Badge bg="secondary" style={{ whiteSpace: 'pre-wrap' }}>Colonia Roma 67 Av. Sur 13-B, San Salvador, El Salvador</Badge>
                         </h5></Container>
                     </Col>
                 </Row>
