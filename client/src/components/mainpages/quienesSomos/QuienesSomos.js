@@ -29,7 +29,7 @@ function QuienesSomos() {
             <Card>
                 <div class="container-lg" id="descripcionId">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 align-self-center">
                             <Card style={{ justifyContent: 'center' }}>
                                 <Card.Body>
                                     <Card.Text>
@@ -45,7 +45,7 @@ function QuienesSomos() {
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 align-self-center justify-content-md-center">
                             <CardDeck>
                                 <Card>
                                     <Card.Img className="cardsImg" variant="top" src={img1} />
@@ -74,7 +74,7 @@ function QuienesSomos() {
             <Card>
                 <div class="container-lg">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 align-self-center">
                             <CardDeck>
                                 <Card>
                                     <Card.Img className="cardsImg" variant="top" src={ucaLogo} />
@@ -82,7 +82,7 @@ function QuienesSomos() {
 
                             </CardDeck>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 align-self-center">
                             <div class="containerucalogtext">
                                 <Card style={{ justifyContent: 'center' }}>
                                     <Card.Body>
