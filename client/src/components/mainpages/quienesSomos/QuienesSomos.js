@@ -48,7 +48,7 @@ function QuienesSomos() {
                         <div class="col-sm-4 align-self-center justify-content-md-center">
                             <CardDeck>
                                 <Card>
-                                    <Card.Img className="cardsImg" variant="top" src={img1} />
+                                    <Card.Img className="cardsImg" variant="top" src={img1}  />
                                 </Card>
 
                             </CardDeck>
@@ -60,13 +60,13 @@ function QuienesSomos() {
             <div className="qSomosPt2">
                 <CardDeck>
                     <Card>
-                        <Card.Img className="cardsImg" variant="top" src={qSomos1} />
+                        <Card.Img className="cardsImg" variant="top" src={qSomos1}/>
                     </Card>
                     <Card>
-                        <Card.Img className="cardsImg" variant="top" src={qSomos2} />
+                        <Card.Img className="cardsImg" variant="top" src={qSomos2}/>
                     </Card>
                     <Card>
-                        <Card.Img className="cardsImg" variant="top" src={qSomos3} />
+                        <Card.Img className="cardsImg" variant="top" src={qSomos3}/>
                     </Card>
                 </CardDeck>
             </div>
@@ -77,7 +77,7 @@ function QuienesSomos() {
                         <div class="col-sm-4 align-self-center">
                             <CardDeck>
                                 <Card>
-                                    <Card.Img className="cardsImg" variant="top" src={ucaLogo} />
+                                    <Card.Img className="cardsImg" variant="top" src={ucaLogo}/>
                                 </Card>
 
                             </CardDeck>
