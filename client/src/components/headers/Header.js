@@ -6,6 +6,7 @@ import Cart from './icon/cart.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Logo from './images/iconoCocos.png'
+import Carrito from './images/cart32.png'
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Button from 'react-bootstrap/Button';
@@ -69,7 +70,7 @@ function Header() {
                     <Link>¿QUIENES SOMOS?</Link>
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu>
+                    <Dropdown.Menu style={{background:'#17181A'}}>
                     <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Descripción</Link></Dropdown.Item>
                             <Dropdown.Item href="/quienesSomos/fundadores"><Link to="/quienesSomos/fundadores">Fundadores</Link></Dropdown.Item>
                             <Dropdown.Item href="/quienesSomos/misionVision"><Link to="/quienesSomos/misionVision">Misión y Visión</Link></Dropdown.Item>
@@ -98,7 +99,7 @@ function Header() {
                                 <span>{cart.length}</span>
 
                                 <Link to="/cart" style={{background:'#17181A'}}>
-                                    <img src={Cart} alt="" width="30" />
+                                    <img src={Carrito} alt="" width="30" style={{background:'#17181A'}}/>
                                 </Link>
                             </div>
                         </li>
