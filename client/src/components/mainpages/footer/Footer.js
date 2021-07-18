@@ -6,10 +6,9 @@ function Footer() {
             <div className="containerI">
                 <ul class="social-icons" id="l2">
                     <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                     <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
             <br></br>

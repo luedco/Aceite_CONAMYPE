@@ -22,17 +22,18 @@ let imgs = [
 function fundadores() {
     return (
         <div className="containerFundadores" id="fundadoresId">
-            <div class="separator"><h2>Fundadores</h2></div>
+            <div class="separator"><h2>FUNDADORES</h2></div>
+            <br></br>
             <CardDeck className="rowE">
                 <Row className="colE">
                     <Col>
                         <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[0]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[0]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeGreen">
+                            <Card className="cardFeGreen" style={{ textAlign: 'justify' }}>
                                 <Card.Body>
-                                    <Card.Title>Ing. Grace Flores</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Grace Flores</Card.Title>
                                     <Card.Text>
                                         Me gustó mucho que pude aplicar los conocimientos sobre mi carrera y adquirir nuevos sobre otros rubros. Además, conocí muy buena gente.
                                     </Card.Text>
@@ -44,13 +45,13 @@ function fundadores() {
                         </Row>
                     </Col>
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[1]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[1]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeBrown">
+                            <Card className="cardFeYellow" style={{ textAlign: 'justify'}}>
                                 <Card.Body>
-                                    <Card.Title>Ing. Sugeidi Pérez</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Sugeidi Pérez</Card.Title>
                                     <Card.Text>
                                         La parte que más me ha gustado del emprendimiento es que he podido poner a prueba mis habilidades y lo aprendido hasta el día de hoy, aprendiendo siempre también de los demás y del trabajo en equipo.
                                     </Card.Text>
@@ -66,13 +67,52 @@ function fundadores() {
                 <br></br><br></br>
                 <Row className="colE">
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[4]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[8]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeBrown">
+                            <Card className="cardFeYellow" style={{ textAlign: 'justify' }}>
                                 <Card.Body>
-                                    <Card.Title>Ing. Luis Cortez</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Mario Martinez</Card.Title>
+                                    <Card.Text>
+                                        Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo.
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted"></small>
+                                </Card.Footer>
+                            </Card>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Row className="rowE">
+                            <Card className="cardF">
+                                <Card.Img variant="top" src={imgs[8]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
+                            </Card>
+                            <Card className="cardFeGreen" style={{ textAlign: 'justify' }}>
+                                <Card.Body>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Mario Martinez</Card.Title>
+                                    <Card.Text>
+                                        Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo.
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted"></small>
+                                </Card.Footer>
+                            </Card>
+                        </Row>
+                    </Col>
+                </Row>
+                <br></br><br></br>
+                <Row className="colE">
+                    <Col>
+                        <Row className="rowE">
+                            <Card className="cardF">
+                                <Card.Img variant="top" src={imgs[4]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
+                            </Card>
+                            <Card className="cardFeGreen" style={{ textAlign: 'justify' }}>
+                                <Card.Body>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Luis Cortez</Card.Title>
                                     <Card.Text>
                                         Me gustó mucho que pude aplicar los conocimientos sobre mi carrera y adquirir nuevos sobre otros rubros. Además, conocí muy buena gente.
                                     </Card.Text>
@@ -84,13 +124,13 @@ function fundadores() {
                         </Row>
                     </Col>
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[5]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[5]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeGreen">
+                            <Card className="cardFeYellow" style={{ textAlign: 'justify' }}>
                                 <Card.Body>
-                                    <Card.Title>Ing. Daniel Hernández</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Ing. Daniel Hernández</Card.Title>
                                     <Card.Text>
                                         La parte que más me ha gustado del emprendimiento es que he podido poner a prueba mis habilidades y lo aprendido hasta el día de hoy, aprendiendo siempre también de los demás y del trabajo en equipo.
                                     </Card.Text>
@@ -105,13 +145,13 @@ function fundadores() {
                 <br></br><br></br>
                 <Row className="colE">
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[6]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[6]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeGreen">
+                            <Card className="cardFeYellow" style={{ textAlign: 'justify' }}>
                                 <Card.Body>
-                                    <Card.Title>Lic. Marielos Najarro</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Lic. Marielos Najarro</Card.Title>
                                     <Card.Text>
                                         El proyecto resultó ser una puerta de aprendizaje y de retroalimentación, de los aspectos que ya conozco de mi carrera. Asimismo, me gusto compartir mis conocimientos con otras áreas que se complementan, con el fin de concretar y crear un emprendimiento exitoso.
                                     </Card.Text>
@@ -123,13 +163,13 @@ function fundadores() {
                         </Row>
                     </Col>
                     <Col>
-                        <Row>
+                        <Row className="rowE">
                             <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[7]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
+                                <Card.Img variant="top" src={imgs[7]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto'}} />
                             </Card>
-                            <Card className="cardFeYellow">
+                            <Card className="cardFeGreen" style={{ textAlign: 'justify' }}>
                                 <Card.Body>
-                                    <Card.Title>Lic. Ivannia Urquilla</Card.Title>
+                                    <Card.Title style={{color: 'white', fontFamily: 'Alfa Slab One, cursive'}}>Lic. Ivannia Urquilla</Card.Title>
                                     <Card.Text>
                                         En el desarrollo del emprendimiento me ha gustado llevar a la práctica todos los conocimientos adquiridos a lo largo de la carrera, y el adquirir conocimientos de otras áreas como lo son la ingeniería. Siempre soy del pensamiento que nunca dejamos de aprender.
                                     </Card.Text>
@@ -143,30 +183,7 @@ function fundadores() {
                     </Col>
                 </Row>
                 <br></br><br></br>
-                <Row className="colE">
-                    <Col>
-                        <Row>
-                            <Card className="cardF">
-                                <Card.Img variant="top" src={imgs[8]} style={{ width: '15em', height: '15em', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginBottom: 'auto', marginTop: 'auto' }} />
-                            </Card>
-                            <Card className="cardFeYellow">
-                                <Card.Body>
-                                    <Card.Title>Ing. Mario Martinez</Card.Title>
-                                    <Card.Text>
-                                        Me resultó un proyecto interesante ya que me permitió aplicar las diferentes herramientas que gracias al estudio de mi carrera he ido aprendiendo.
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted"></small>
-                                </Card.Footer>
-                            </Card>
-                        </Row>
-                    </Col>
-                </Row>
-                <br></br><br></br>
-
             </CardDeck>
-            <br></br><br></br>
             <Footer></Footer>
         </div>
     )

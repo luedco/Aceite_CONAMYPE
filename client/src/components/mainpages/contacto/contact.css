@@ -1,11 +1,16 @@
-h6{
-    text-transform: uppercase;
-    color: rgb(46, 44, 44);
-    font-family: "Lucida Console", "Courier New", monospace;*/
-}
+.cardFeGreen{
+    background-color: #99C66D;
+  }
+  .cardFeBrown{
+    background-color: #DAC2B0
+  }
+  .cardFeYellow{
+    background-color: #EEBD67;
+  }
 
-h3{
-    text-transform: uppercase;
-    color: rgb(46, 44, 44);
-    font-family: "Lucida Console", "Courier New", monospace;*/
-}
+  .colTMision{
+    background-color: #99C66D;
+  }
+  .colTVision{
+    background-color: #EEBD67;
+  }

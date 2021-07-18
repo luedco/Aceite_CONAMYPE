@@ -57,22 +57,22 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/mainPage">{isAdmin ? 'Admin' : 'Scent House'}</Link>
+                    <Link className="aa" to="/mainPage">{isAdmin ? 'Admin' : 'Scent House'}</Link>
                     <img src={Logo} alt="logo" className="imgCoco"></img>
                 </h1>
             </div>
 
-            <ul style={styleMenu} style={{}}>
+            <ul style={styleMenu} style={{background:'#17181A'}}>
                 <li><Button variant="primary-outline"><Link to="/mainPage">Inicio</Link></Button></li>
                 <li><Dropdown>
                     <Dropdown.Toggle variant="primary-outline" id="dropdown-basic">
-                        ¿QUIENES SOMOS?
+                    <Link>¿QUIENES SOMOS?</Link>
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                    <Dropdown.Item href="/quienesSomos#descripcionId">Descripción</Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos/fundadores">Fundadores</Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos/misionVision">Misión y Visión</Dropdown.Item>
+                    <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Descripción</Link></Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos/fundadores"><Link to="/quienesSomos/fundadores">Fundadores</Link></Dropdown.Item>
+                            <Dropdown.Item href="/quienesSomos/misionVision"><Link to="/quienesSomos/misionVision">Misión y Visión</Link></Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown></li>
                 <li><Button variant="primary-outline"><Link to="/saludbeneficios">Salud y Beneficios</Link></Button></li>
@@ -97,7 +97,7 @@ function Header() {
                             <div className="cart-icon">
                                 <span>{cart.length}</span>
 
-                                <Link to="/cart">
+                                <Link to="/cart" style={{background:'#17181A'}}>
                                     <img src={Cart} alt="" width="30" />
                                 </Link>
                             </div>

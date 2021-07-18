@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { GlobalState } from '../../../GlobalState'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import './contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
@@ -17,28 +18,30 @@ function Contacto() {
     return (
         <div className="qSomos-page">
             <br></br>
+            <div class="separator"><h2>CONTACTO</h2></div>
+            <br></br>
             <Container fluid="md" style={{ whiteSpace: 'pre-wrap', textAlign: 'justify' }}>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
                 <Row className="">
                     <Col xs={5} md='4'>
                         <Row>
-                            <Card>
+                            <Card style={{ backgroundColor:'#99C66D' }}>
                                 <Card.Body>
                                     <Card.Title>📞 Llámanos:</Card.Title>
                                     <Card.Text>
-                                        Oficinas Centrales Sonsonate: 2240-0046
+                                        Oficinas Centrales Sonsonate:           2240-0046
                                     </Card.Text>
                                     <Card.Text>
-                                        Oficinas Secundarias: 2240-0047
+                                        Oficinas Secundarias:                        2240-0047
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Row>
                         <br></br>
                         <Row>
-                            <Card>
+                            <Card style={{ backgroundColor:'#EEBD67' }}>
                                 <Card.Body>
-                                    <Card.Title>⏰ Horario:</Card.Title>
+                                    <Card.Title className="">⏰ Horario:</Card.Title>
                                     <Card.Text>
                                         Horarios de lunes a viernes: 8:00 a.m - 5:00 p.m
                                     </Card.Text>
@@ -52,7 +55,7 @@ function Contacto() {
                     </Col>
 
                     <Col xs={7} md='8'>
-                        <Card>
+                        <Card style={{ backgroundColor:'#D98A8B' }}>
                             <Card.Body>
                                 <Card.Text>
                                     <Form>
@@ -82,10 +85,10 @@ function Contacto() {
                 <br></br>
                 <Row className="justify-content-md-center">
                     <Col xs={6}>
-                        <Card>
+                        <Card style={{ backgroundColor:'#99C66D' }}>
                             <Card.Body>
                                 <Card.Text>
-                                    Ubicación Oficinas Centrales Sonsonate:
+                                    📍 Ubicación Oficinas Centrales Sonsonate:
                                 </Card.Text>
                                 <Card.Text>
                                     Departamento de Sonsonate, colonia El Balsamar, pasaje 2
@@ -98,16 +101,16 @@ function Contacto() {
                         </Card>
                     </Col>
                     <Col xs={6}>
-                    <Card>
+                        <Card style={{ backgroundColor:'#EEBD67' }}>
                             <Card.Body>
                                 <Card.Text>
-                                Ubicación Oficinas Secundarias:
+                                    📍 Ubicación Oficinas Secundarias:
                                 </Card.Text>
                                 <Card.Text>
-                                Colonia Roma 67 Av. Sur 13-B, San Salvador, El Salvador
+                                    Colonia Roma 67 Av. Sur 13-B, San Salvador, El Salvador
                                 </Card.Text>
                                 <Card.Text>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2954369632007!2d-89.22672078534634!3d13.700548190380651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330413ca1b54b%3A0x25fe4f3a30547156!2s67%20Avenida%20Sur%2013%2C%20San%20Salvador!5e0!3m2!1ses!2ssv!4v1626415805189!5m2!1ses!2ssv" width="100%" height="225px" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2954369632007!2d-89.22672078534634!3d13.700548190380651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330413ca1b54b%3A0x25fe4f3a30547156!2s67%20Avenida%20Sur%2013%2C%20San%20Salvador!5e0!3m2!1ses!2ssv!4v1626415805189!5m2!1ses!2ssv" width="100%" height="225px" allowfullscreen="" loading="lazy"></iframe>
                                 </Card.Text>
 
                             </Card.Body>
@@ -115,7 +118,7 @@ function Contacto() {
                     </Col>
                 </Row>
 
-                
+
             </Container>
             <br></br><br></br>
             <Footer></Footer>

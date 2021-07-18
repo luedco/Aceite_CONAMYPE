@@ -13,7 +13,12 @@ header .logo{
 }
 header a{
     text-transform: uppercase;
-    color: rgb(46, 44, 44);
+    color: rgb(238, 229, 229);
+    /*font-family: "Lucida Console", "Courier New", monospace;*/
+}
+.aa{
+    text-transform: uppercase;
+    color: rgb(17, 17, 17);
     /*font-family: "Lucida Console", "Courier New", monospace;*/
 }
 header ul li{
