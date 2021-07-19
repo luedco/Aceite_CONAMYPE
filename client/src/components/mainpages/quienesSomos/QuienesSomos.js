@@ -24,7 +24,7 @@ function QuienesSomos() {
         <div className="qSomos-page">
             <br></br>
             <p>
-                <div class="separator"><h2>Emprendimiento</h2></div>
+                <div class="separator"><h2>EMPRENDIMIENTO</h2></div>
             </p>
 
             <div class="container-lg" id="descripcionId">

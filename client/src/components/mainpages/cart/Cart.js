@@ -82,6 +82,7 @@ function Cart() {
 
     return (
         <div>
+            <div class="separator"><h2>CARRITO DE COMPRAS</h2></div>
             {
                 cart.map(product => (
                     <div className="detail cart" key={product._id}>
@@ -109,14 +110,12 @@ function Cart() {
             }
 
             <div className="total">
-                <h3>Total a pagar: $ {total}</h3>
-                <PaypalButton
-                total={total}
-                tranSuccess={tranSuccess} />
+                <h3>Subtotal: $ {total.toFixed(2)}</h3>
+
             </div>
         <br></br>
-        <div>
-            <a href="/checkout" class="btn btn-success btn-lg btn-block" role="button">Ir a Último Paso</a>
+        <div className="btn-container">
+            <a href="/checkout" class="btn btn-warning btn-lg btnPago" role="button">Proceder a pago</a>
         </div>
         <br></br>
         <Footer></Footer>

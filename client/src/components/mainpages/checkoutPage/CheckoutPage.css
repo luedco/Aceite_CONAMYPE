@@ -1,0 +1,5 @@
+.listPay{
+    display: grid;
+    grid-template-columns: 2;
+    border-color: yellow;
+}

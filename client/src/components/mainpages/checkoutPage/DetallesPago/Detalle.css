@@ -1,0 +1,8 @@
+.detalleContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.detalleForm{
+    width: 500px;
+}
