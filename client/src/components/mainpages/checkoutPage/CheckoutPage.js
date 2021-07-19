@@ -3,6 +3,7 @@ import { GlobalState } from '../../../GlobalState'
 import axios from 'axios'
 import CreditCard from './CreditCard/CreditCard'
 import PaypalButton from '../cart/PaypalButton'
+import ResumenProducto from './ResumenProducto/ResumenProducto'
 import Detalles from './DetallesPago/Detalles'
 import Footer from '../footer/Footer'
 
@@ -69,17 +70,6 @@ function CheckoutPage() {
     return (
         <div>
             <div class="separator"><h2>PÁGINA DE PAGO</h2></div>
-            {
-                cart.map(product => (
-                    <div className="listPay cart detail" key={product._id}>
-                        <h5>Producto: {product.title}</h5>
-                        <h5>Precio Individual: $ {product.price}</h5>
-                        <span>Cantidad: {product.quantity}</span>
-                        <h5>Precio Producto: $ {product.price * product.quantity}</h5>
-                    </div>
-                ))
-            }
-
             <div className="total">
                 <h3>Subtotal: $ {total.toFixed(2)}</h3>
                 <PaypalButton
@@ -88,6 +78,28 @@ function CheckoutPage() {
             </div>
             <div class="separator"><h4>DETALLES DE LA ENTREGA</h4></div>
             <Detalles></Detalles>
+            <div class="separator"><h4>DETALLES DEL PRODUCTO</h4></div>
+            <div className="detalleContainer">
+
+                <form className="detalleForm">
+
+                    <div class="form-group">
+                        <label for="full_name_id" class="control-label">Ingresa el código promocional </label>
+                        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="703D2" />
+                    </div>
+
+                    <div className="detallesInfoContainer">
+                        <div className="detallesInfo">
+                            <h5>Subtotal: $ {total.toFixed(2)}</h5>
+                            <br></br>
+                            <h5>Cargos por envío: $ 2.5</h5>
+                            <br></br>
+                            <h5>Total a Pagar: $ {(total + 2.50).toFixed(2)}</h5>
+                        </div>
+                    </div>
+
+                </form>
+            </div >
             <div class="separator"><h4>INFORMACIÓN DE PAGO</h4></div>
             <CreditCard></CreditCard>
             <br></br>

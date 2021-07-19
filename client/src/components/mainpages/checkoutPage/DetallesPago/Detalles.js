@@ -22,11 +22,6 @@ function Detalles() {
                     <label for="street1_id" class="control-label">Dirección</label>
                     <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Colonia, Pasaje, Calle, # de Casa, etc" />
                 </div>
-                <div class="form-group"> 
-                    <label for="city_id" class="control-label">Municipio</label>
-                    <input type="text" class="form-control" id="city_id" name="city" placeholder="San Salvador" />
-                </div>
-
                 <div class="form-group">
                     <label for="state_id" class="control-label">Departamento</label>
                     <select class="form-control" id="state_id">
@@ -46,7 +41,10 @@ function Detalles() {
                         <option value="ID">Usulután</option>
                     </select>
                 </div>
-
+                <div class="form-group"> 
+                    <label for="city_id" class="control-label">Municipio</label>
+                    <input type="text" class="form-control" id="city_id" name="city" placeholder="San Salvador" />
+                </div>
             </form>
         </div>
     )
