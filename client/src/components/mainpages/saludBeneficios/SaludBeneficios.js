@@ -30,7 +30,7 @@ function SaludBeneficios() {
                         <div class="col-sm-4 align-self-center justify-content-md-center">
                             <CardDeck>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[0]} style={{ width:'20em', height:'40em'}}/>
+                                    <Card.Img variant="top" src={imgs[4]} style={{ maxWidth:'20em', maxHeight:'40em'}}/>
                                 </Card>
 
                             </CardDeck>
@@ -127,7 +127,7 @@ function SaludBeneficios() {
                         <div class="col-sm-4 align-self-center">
                             <CardDeck>
                                 <Card>
-                                    <Card.Img variant="top" src={imgs[4]} style={{ width:'20em', height:'40em'}}/>
+                                    <Card.Img variant="top" src={imgs[0]} style={{ maxWidth:'20em', maxHeight:'40em'}}/>
                                 </Card>
 
                             </CardDeck>
