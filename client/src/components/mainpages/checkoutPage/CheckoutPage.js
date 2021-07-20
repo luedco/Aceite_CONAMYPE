@@ -16,7 +16,7 @@ function CheckoutPage() {
     const [estadoCupon, setEstadoCupon]= useState(false)
     let cuponAplicado = false;
     var valorCupon="";
-    const [costoEnvio, setcostoEnvio]= useState("0.00")
+    const [costoEnvio, setcostoEnvio]= useState("3.50")
 
     function aplicarEnvio(val){
         setcostoEnvio(val.target.value)
@@ -115,20 +115,20 @@ function CheckoutPage() {
                <div class="form-group">
                    <label for="state_id" class="control-label">Departamento</label>
                    <select class="form-control" id="municipio_id" onChange={aplicarEnvio}>
-                       <option value="3.50">Ahuachpán</option>
-                       <option value="4.25">Cabañas</option>
-                       <option value="4.25">Chalatenango</option>
-                       <option value="4.25">Cuscatlán</option>
-                       <option value="4.25">La Libertad</option>
-                       <option value="4.25">La Paz</option>
-                       <option value="2.75">La Unión</option>
-                       <option value="2.75">Morazán</option>
-                       <option value="2.75">San Miguel</option>
-                       <option value="2">San Salvador</option>
-                       <option value="4.25">San Vicente</option>
-                       <option value="3.50">Santa Ana</option>
-                       <option value="3.50">Sonsonate</option>
-                       <option value="2.75">Usulután</option>
+                       <option value="3.50">Ahuachpán (+ $3.50)</option>
+                       <option value="4.25">Cabañas (+ $4.25)</option>
+                       <option value="4.25">Chalatenango (+ $4.25)</option>
+                       <option value="4.25">Cuscatlán (+ $4.25)</option>
+                       <option value="4.25">La Libertad (+ $4.25)</option>
+                       <option value="4.25">La Paz (+ $4.25)</option>
+                       <option value="2.75">La Unión (+ $2.75)</option>
+                       <option value="2.75">Morazán (+ $2.75)</option>
+                       <option value="2.75">San Miguel (+ $2.75)</option>
+                       <option value="2">San Salvador (+ $2.00)</option>
+                       <option value="4.25">San Vicente (+ $4.25)</option>
+                       <option value="3.50">Santa Ana (+ $3.50)</option>
+                       <option value="3.50">Sonsonate (+ $3.50)</option>
+                       <option value="2.75">Usulután (+ $2.75)</option>
                    </select>
                </div>
                <div class="form-group"> 

@@ -30,8 +30,8 @@ function Header() {
     const adminRouter = () => {
         return (
             <>
-                <li><Link to="/create_product">Create Product</Link></li>
-                <li><Link to="/category">Categories</Link></li>
+                <li><Link to="/create_product">Crear Producto</Link></li>
+                <li><Link to="/category">Categorias</Link></li>
             </>
         )
     }
@@ -39,8 +39,8 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">History</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
+                <li><Link to="/history">Historial</Link></li>
+                <li><Link to="/" onClick={logoutUser}>Salir</Link></li>
             </>
         )
     }
@@ -83,7 +83,7 @@ function Header() {
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Button variant="primary-outline"><Link to="/login">Login 👤 Register</Link></Button></li>
+                    isLogged ? loggedRouter() : <li><Button variant="primary-outline"><Link to="/login">Entrar 👤 Registrarte</Link></Button></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>

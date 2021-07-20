@@ -16,5 +16,6 @@
 
 .containerCodigo{
     display: flex;
-    flex-direction: row;
+    text-align: justify;
+    justify-content: center;
 }
