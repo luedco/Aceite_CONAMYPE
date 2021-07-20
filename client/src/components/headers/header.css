@@ -6,7 +6,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
 }
 header .logo{
     flex: 1;
@@ -24,7 +24,7 @@ header a{
 header ul li{
     display: inline-block;
     opacity: 1.0;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 header ul li:hover{
     opacity: 1;
@@ -43,7 +43,7 @@ header ul li:hover{
     position: absolute;
     top:-10px;
     right: -10px;
-    padding: 5px 7px;
+    padding: 5px 5px;
     font-size: 10px;
 }
 

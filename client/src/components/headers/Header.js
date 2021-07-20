@@ -53,7 +53,7 @@ function Header() {
     return (
         <header>
             <div className="menu" onClick={() => setMenu(!menu)}>
-                <img src={Menu} alt="" width="30" />
+                <img src={Menu} alt="" width="25" />
             </div>
 
             <div className="logo">
@@ -99,7 +99,7 @@ function Header() {
                                 <span>{cart.length}</span>
 
                                 <Link to="/cart" style={{background:'#17181A'}}>
-                                    <img src={Carrito} alt="" width="30" style={{background:'#17181A'}}/>
+                                    <img src={Carrito} alt="" width="25" style={{background:'#17181A'}}/>
                                 </Link>
                             </div>
                         </li>
