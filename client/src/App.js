@@ -6,6 +6,7 @@ import MainPages from './components/mainpages/Pages'
 
 
 function App() {
+  let imgs = 'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1626743036/ScentHouse/promo_zou8qo.jpg';
   return (
     <DataProvider>
       <Router>
