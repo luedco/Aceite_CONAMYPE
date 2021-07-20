@@ -43,3 +43,11 @@
     object-fit: cover;
     display: block;
 }
+
+.btnPago{
+    padding: 10px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}

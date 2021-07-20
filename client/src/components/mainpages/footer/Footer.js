@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import './Footer.css'
 function Footer() {
     return (
-        <div>
+        <div className="footerContainer">
             <div className="containerI">
                 <ul class="social-icons" id="l2">
                     <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>

@@ -1,0 +1,8 @@
+.detallesInfo{
+    display: flex;
+}
+
+.detalleContainer{
+    display: flex;
+    justify-content: center;
+}

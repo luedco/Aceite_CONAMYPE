@@ -2,21 +2,27 @@ import React, {useContext, useState, useEffect} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
 import PaypalButton from './PaypalButton'
-import CreditCard from './CreditCard/CreditCard'
 import Footer from '../footer/Footer'
 function Cart() {
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
+    const [subTotalProd, setSubTotalProd]= useState(0)
+    const [precioMayoreo,setPrecioMayoreo]= useState(0)
+
+
 
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
-                return prev + (item.price * item.quantity)
+                    var precioCaja = (12*item.price)/1.10;
+                    var precioMayoreoCalc = ((Math.trunc(item.quantity/12))*precioCaja) + ((item.quantity%12)*item.price);
+                return prev + (precioMayoreoCalc)
             },0)
 
             setTotal(total)
+            
         }
 
         getTotal()
@@ -34,6 +40,7 @@ function Cart() {
         cart.forEach(item => {
             if(item._id === id){
                 item.quantity += 1
+
             }
         })
 
@@ -83,6 +90,7 @@ function Cart() {
 
     return (
         <div>
+            <div class="separator"><h2>CARRITO DE COMPRAS</h2></div>
             {
                 cart.map(product => (
                     <div className="detail cart" key={product._id}>
@@ -91,7 +99,7 @@ function Cart() {
                         <div className="box-detail">
                             <h2>{product.title}</h2>
 
-                            <h3>$ {product.price * product.quantity}</h3>
+                            <h3>$ {(((Math.trunc(product.quantity/12))*((12*product.price)/1.10)) + ((product.quantity%12)*product.price)).toFixed(2)}</h3>
                             <p>{product.description}</p>
 
                             <div className="amount">
@@ -99,7 +107,6 @@ function Cart() {
                                 <span>{product.quantity}</span>
                                 <button onClick={() => increment(product._id)}> + </button>
                             </div>
-                            
                             <div className="delete" 
                             onClick={() => removeProduct(product._id)}>
                                 X
@@ -110,12 +117,13 @@ function Cart() {
             }
 
             <div className="total">
-                <h3>Total a pagar: $ {total}</h3>
-                <PaypalButton
-                total={total}
-                tranSuccess={tranSuccess} />
+                <h3>Subtotal: $ {total.toFixed(2)}</h3>
+
             </div>
-        <CreditCard></CreditCard>
+        <br></br>
+        <div className="btn-container">
+            <a href="/checkout" class="btn btn-warning btn-lg btnPago" role="button">Proceder a pago</a>
+        </div>
         <br></br>
         <Footer></Footer>
         </div>

@@ -17,7 +17,7 @@ import MainPage from './mainPage/MainPage'
 import SaludBeneficios from './saludBeneficios/SaludBeneficios'
 import Ayuda from './ayuda/Ayuda'
 import Contacto from './contacto/Contacto'
-
+import CheckoutPage from './checkoutPage/CheckoutPage'
 
 import {GlobalState} from '../../GlobalState'
 
@@ -44,6 +44,7 @@ function Pages() {
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
+            <Route path="/checkout" exact component={CheckoutPage}/>
 
             <Route path="/quienesSomos" exact component={QuienesSomos}/>
             <Route path="/quienesSomos/fundadores" exact component={Fundadores}/>

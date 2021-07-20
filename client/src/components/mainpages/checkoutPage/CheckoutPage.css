@@ -1,0 +1,20 @@
+.listPay{
+    display: grid;
+    grid-template-columns: 2;
+    border-color: yellow;
+}
+
+.detallesInfoContainer{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+}
+
+.aplicarDiscount{
+    padding: 10px;
+}
+
+.containerCodigo{
+    display: flex;
+    flex-direction: row;
+}
