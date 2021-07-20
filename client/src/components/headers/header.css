@@ -24,7 +24,7 @@ header a{
 header ul li{
     display: inline-block;
     opacity: 1.0;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 header ul li:hover{
     opacity: 1;

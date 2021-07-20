@@ -29,9 +29,9 @@ function Header() {
 
     const adminRouter = () => {
         return (
-            <>
-                <li><Link to="/create_product">Crear Producto</Link></li>
-                <li><Link to="/category">Categorias</Link></li>
+            <>                
+                <li><Button variant="primary-outline"><Link to="/create_product">Crear Producto</Link></Button></li>
+                <li><Button variant="primary-outline"><Link to="/category">Categorias</Link></Button></li>
             </>
         )
     }
@@ -39,8 +39,7 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">Historial</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Salir</Link></li>
+                <li><Button variant="primary-outline"><Link to="/" onClick={logoutUser}>Salir</Link></Button></li>
             </>
         )
     }
@@ -63,17 +62,17 @@ function Header() {
                 </h1>
             </div>
 
-            <ul style={styleMenu} style={{background:'#17181A'}}>
+            <ul style={styleMenu} style={{ background: '#17181A' }}>
                 <li><Button variant="primary-outline"><Link to="/mainPage">Inicio</Link></Button></li>
                 <li><Dropdown>
                     <Dropdown.Toggle variant="primary-outline" id="dropdown-basic">
-                    <Link>¿QUIENES SOMOS?</Link>
+                        <Link>¿QUIENES SOMOS?</Link>
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu style={{background:'#17181A'}}>
-                    <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Descripción</Link></Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos/fundadores"><Link to="/quienesSomos/fundadores">Fundadores</Link></Dropdown.Item>
-                            <Dropdown.Item href="/quienesSomos/misionVision"><Link to="/quienesSomos/misionVision">Misión y Visión</Link></Dropdown.Item>
+                    <Dropdown.Menu style={{ background: '#17181A' }}>
+                        <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Descripción</Link></Dropdown.Item>
+                        <Dropdown.Item href="/quienesSomos/fundadores"><Link to="/quienesSomos/fundadores">Fundadores</Link></Dropdown.Item>
+                        <Dropdown.Item href="/quienesSomos/misionVision"><Link to="/quienesSomos/misionVision">Misión y Visión</Link></Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown></li>
                 <li><Button variant="primary-outline"><Link to="/saludbeneficios">Salud y Beneficios</Link></Button></li>
@@ -98,8 +97,8 @@ function Header() {
                             <div className="cart-icon">
                                 <span>{cart.length}</span>
 
-                                <Link to="/cart" style={{background:'#17181A'}}>
-                                    <img src={Carrito} alt="" width="30" style={{background:'#17181A'}}/>
+                                <Link to="/cart" style={{ background: '#17181A' }}>
+                                    <img src={Carrito} alt="" width="30" style={{ background: '#17181A' }} />
                                 </Link>
                             </div>
                         </li>
