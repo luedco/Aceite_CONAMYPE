@@ -12,6 +12,11 @@ function CheckoutPage() {
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
+    const [cupon,setCupon,getCupon] =  useState(1)
+    const [estadoCupon, setEstadoCupon]= useState(false)
+    let cuponAplicado = false;
+    var valorCupon="";
+
 
     useEffect(() => {
         const getTotal = () => {
@@ -67,15 +72,22 @@ function CheckoutPage() {
         })
     }
 
+    function aplicarDescuento(){
+        if(cupon == "112021SH" && estadoCupon==false){
+            setTotal(total/1.10)
+            setEstadoCupon(estadoCupon=true)
+        }else{
+            alert("Cupon Inválido o Cupón Ya utilizado")
+        }
+    }
+
+    function aplicarDesc(val){
+        setCupon(val.target.value)
+        valorCupon = val.target.value.toString();
+    }
+
     return (
         <div>
-            <div class="separator"><h2>PÁGINA DE PAGO</h2></div>
-            <div className="total">
-                <h3>Subtotal: $ {total.toFixed(2)}</h3>
-                <PaypalButton
-                    total={total}
-                />
-            </div>
             <div class="separator"><h4>DETALLES DE LA ENTREGA</h4></div>
             <Detalles></Detalles>
             <div class="separator"><h4>DETALLES DEL PRODUCTO</h4></div>
@@ -83,9 +95,12 @@ function CheckoutPage() {
 
                 <form className="detalleForm">
 
-                    <div class="form-group">
+                    <div class="form-group containerCodigo">
                         <label for="full_name_id" class="control-label">Ingresa el código promocional </label>
-                        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="703D2" />
+                        <input type="text" class="form-control" name="full_name" placeholder="703D2" onChange={aplicarDesc}/>
+                        <div class="aplicarDiscount">
+                                <a class="btn btn-warning" onClick={aplicarDescuento}>Aplicar</a>
+                        </div>
                     </div>
 
                     <div className="detallesInfoContainer">
@@ -94,7 +109,7 @@ function CheckoutPage() {
                             <br></br>
                             <h5>Cargos por envío: $ 2.5</h5>
                             <br></br>
-                            <h5>Total a Pagar: $ {(total + 2.50).toFixed(2)}</h5>
+                            <h5 className="total">Total a Pagar: $ {(total + 2.50).toFixed(2)}</h5>
                         </div>
                     </div>
 

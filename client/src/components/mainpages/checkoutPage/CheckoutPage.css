@@ -9,3 +9,12 @@
     text-align: justify;
     justify-content: center;
 }
+
+.aplicarDiscount{
+    padding: 10px;
+}
+
+.containerCodigo{
+    display: flex;
+    flex-direction: row;
+}
