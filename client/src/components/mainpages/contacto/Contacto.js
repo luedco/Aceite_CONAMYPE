@@ -71,7 +71,7 @@ function Contacto() {
                                             <Form.Label>Comentario:</Form.Label>
                                             <Form.Control as="textarea" rows={2} />
                                             <br></br>
-                                            <Button variant="primary" type="submit">
+                                            <Button variant="warning" type="submit">
                                                 Enviar
                                             </Button>
                                         </Form.Group>

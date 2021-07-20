@@ -9,7 +9,7 @@ function App() {
   return (
     <DataProvider>
       <Router>
-        <div className="App">
+        <div className="App" style={{border: '5px solid',borderColor:'black'}}>
           <Header />
           <MainPages />
         </div>

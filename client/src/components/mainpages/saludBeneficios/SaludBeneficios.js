@@ -22,7 +22,7 @@ function SaludBeneficios() {
         <div className="qSomos-page">
             <br></br>
             <p>
-                <div class="separator"><h2>SALUD Y BENEFICIO</h2></div>
+                <div class="separator"><h2>SALUD Y BENEFICIOS</h2></div>
             </p>
             <Card>
                 <div class="container-lg" id="descripcionId">
