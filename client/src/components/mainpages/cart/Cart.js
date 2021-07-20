@@ -8,6 +8,10 @@ function Cart() {
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
+    const [subTotalProd1, setSubTotalProd1]= useState(0)
+    const [subTotalProd2, setSubTotalProd2]= useState(0)
+    const [subTotalProd3, setSubTotalProd3]= useState(0)
+
 
     useEffect(() =>{
         const getTotal = () =>{
@@ -16,6 +20,7 @@ function Cart() {
             },0)
 
             setTotal(total)
+            
         }
 
         getTotal()
@@ -33,6 +38,34 @@ function Cart() {
         cart.forEach(item => {
             if(item._id === id){
                 item.quantity += 1
+                if(item.quantity>12){
+                    
+                    switch(item.id){
+                        case 1:
+                            var cantDec1 = Math.trunc(item.quantity/12);
+                            var totalCantDec1 = cantDec1 * 3.60*12;
+                            var cantUnit1 = item.quantity - (cantDec1*12);
+                            var totalcantUnit1 = cantUnit1 *4;
+                            setSubTotalProd1(totalCantDec1 + totalcantUnit1)
+                            break;
+                        case 2:
+                            var cantDec2 = Math.trunc(item.quantity/12);
+                            var totalCantDec2 = cantDec2 * 96.30*12;
+                            var cantUnit2 = item.quantity - (cantDec2*12);
+                            var totalcantUnit2 = cantUnit2 *7;
+                            setSubTotalProd1(totalCantDec2 + totalcantUnit2)
+                            break;
+                        default:
+                            var cantDec3 = Math.trunc(item.quantity/12);
+                            var totalCantDec3 = cantDec3 * 9.00*12;
+                            var cantUnit3 = item.quantity - (cantDec3*12);
+                            var totalcantUnit3 = cantUnit3 *10;
+                            setSubTotalProd1(totalCantDec3 + totalcantUnit3)
+                    }
+                }
+                else{
+                    setSubTotalProd1(item.quantity*item.price)
+                }
             }
         })
 
@@ -99,7 +132,10 @@ function Cart() {
                                 <span>{product.quantity}</span>
                                 <button onClick={() => increment(product._id)}> + </button>
                             </div>
-                            
+                            <div>
+                                <h3>Subtotal: $ {subTotalProd1.toFixed(2)}</h3>
+                            </div>
+
                             <div className="delete" 
                             onClick={() => removeProduct(product._id)}>
                                 X

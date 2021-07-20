@@ -75,7 +75,7 @@ function CheckoutPage() {
     function aplicarDescuento(){
         if(cupon == "112021SH" && estadoCupon==false){
             setTotal(total/1.10)
-            setEstadoCupon(estadoCupon=true)
+            setEstadoCupon(true)
         }else{
             alert("Cupon Inválido o Cupón Ya utilizado")
         }
@@ -107,7 +107,7 @@ function CheckoutPage() {
                         <div className="detallesInfo">
                             <h5>Subtotal: $ {total.toFixed(2)}</h5>
                             <br></br>
-                            <h5>Cargos por envío: $ 2.5</h5>
+                            <h5>Cargos por envío: $ </h5>
                             <br></br>
                             <h5 className="total">Total a Pagar: $ {(total + 2.50).toFixed(2)}</h5>
                         </div>

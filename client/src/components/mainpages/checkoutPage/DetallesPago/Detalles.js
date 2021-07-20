@@ -3,6 +3,10 @@ import './Detalle.css'
 
 
 function Detalles() {
+    const [costoEnvio, setcostoEnvio]= useState("")
+    function aplicarEnvio(val){
+        setcostoEnvio(val.target.value)
+    }
     return (
         
         <div className="detalleContainer">
@@ -24,21 +28,21 @@ function Detalles() {
                 </div>
                 <div class="form-group">
                     <label for="state_id" class="control-label">Departamento</label>
-                    <select class="form-control" id="state_id">
-                        <option value="AL">Ahuachpán</option>
-                        <option value="AK">Cabañas</option>
-                        <option value="AZ">Chalatenango</option>
-                        <option value="AR">Cuscatlán</option>
-                        <option value="CA">La Libertad</option>
-                        <option value="CO">La Paz</option>
-                        <option value="CT">La Unión</option>
-                        <option value="DE">Morazán</option>
-                        <option value="DC">San Miguel</option>
-                        <option value="FL">San Salvador</option>
-                        <option value="GA">San Vicente</option>
-                        <option value="HI">Santa Ana</option>
-                        <option value="ID">Sonsonate</option>
-                        <option value="ID">Usulután</option>
+                    <select class="form-control" id="municipio_id" onChange={aplicarEnvio}>
+                        <option value="3.50">Ahuachpán</option>
+                        <option value="4.25">Cabañas</option>
+                        <option value="4.25">Chalatenango</option>
+                        <option value="4.25">Cuscatlán</option>
+                        <option value="4.25">La Libertad</option>
+                        <option value="4.25">La Paz</option>
+                        <option value="2.75">La Unión</option>
+                        <option value="2.75">Morazán</option>
+                        <option value="2.75">San Miguel</option>
+                        <option value="2">San Salvador</option>
+                        <option value="4.25">San Vicente</option>
+                        <option value="3.50">Santa Ana</option>
+                        <option value="3.50">Sonsonate</option>
+                        <option value="2.75">Usulután</option>
                     </select>
                 </div>
                 <div class="form-group"> 
