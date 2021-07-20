@@ -16,7 +16,7 @@ function Cart() {
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
-                    var precioCaja = (12*item.price)/1.10;
+                    var precioCaja = (12*item.price)-(12*item.price)*0.10;
                     var precioMayoreoCalc = ((Math.trunc(item.quantity/12))*precioCaja) + ((item.quantity%12)*item.price);
                 return prev + (precioMayoreoCalc)
             },0)
@@ -99,7 +99,7 @@ function Cart() {
                         <div className="box-detail">
                             <h2>{product.title}</h2>
 
-                            <h3>$ {(((Math.trunc(product.quantity/12))*((12*product.price)/1.10)) + ((product.quantity%12)*product.price)).toFixed(2)}</h3>
+                            <h3>$ {(((Math.trunc(product.quantity/12))*((12*product.price)-(12*product.price)*0.10)) + ((product.quantity%12)*product.price)).toFixed(2)}</h3>
                             <p>{product.description}</p>
 
                             <div className="amount">
