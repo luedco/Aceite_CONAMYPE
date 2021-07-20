@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
     margin: 20px 0;
+    height: 520px;
 }
 
 /* ----------- Product Item ----------------- */
@@ -62,4 +63,13 @@
     margin-bottom: 20px;
     border: 1px solid #555;
     text-transform: capitalize;
+}
+
+
+.product_card {
+
+
+    height: 520px;
+
+
 }
