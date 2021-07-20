@@ -49,8 +49,8 @@ function Register() {
                         placeholder="Password" value={user.password} onChange={onChangeInput} />
 
                     <div className="row">
-                        <button type="submit">Register</button>
-                        <Link to="/login">Login</Link>
+                        <button type="submit">Registrarte</button>
+                        <Link to="/login">Entrar</Link>
                     </div>
                 </form>
             </div>

@@ -34,16 +34,16 @@ function DetailProduct() {
                     <span>$ {detailProduct.price}</span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
-                    <p>Sold: {detailProduct.sold}</p>
+                    <p>Vendidos: {detailProduct.sold}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
-                        Buy Now
+                        Comprar Ahora
                     </Link>
                 </div>
             </div>
 
             <div>
-                <h2>Related products</h2>
+                <h2>Productos Relacionados</h2>
                 <div className="products">
                     {
                         products.map(product => {

@@ -1,0 +1,22 @@
+.err{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgE{
+    width: 25em;
+    height: 25em;
+}
+
+.errtxt{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.imgE{
+    display:block;
+    margin:auto;
+}

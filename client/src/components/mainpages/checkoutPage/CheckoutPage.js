@@ -163,6 +163,7 @@ function CheckoutPage() {
                 </form>
             </div >
             <div class="separator"><h4>INFORMACIÓN DE PAGO</h4></div>
+            <PaypalButton></PaypalButton>
             <CreditCard></CreditCard>
             <br></br>
             <Footer></Footer>
