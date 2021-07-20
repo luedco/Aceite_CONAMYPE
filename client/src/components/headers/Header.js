@@ -18,7 +18,6 @@ function Header() {
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
     const [menu, setMenu] = useState(false)
-    let img = 'https://res.cloudinary.com/dwwgiwtgh/image/upload/v1626743036/ScentHouse/promo_zou8qo.jpg';
 
     const logoutUser = async () => {
         await axios.get('/user/logout')
@@ -53,7 +52,6 @@ function Header() {
 
     return (
         <header>
-            <img src={img} style={{ width: '100%', height: '10em'}}></img>
             <div className="menu" onClick={() => setMenu(!menu)}>
                 <img src={Menu} alt="" width="25" />
             </div>
@@ -101,7 +99,7 @@ function Header() {
                                 <span>{cart.length}</span>
 
                                 <Link to="/cart" style={{background:'#17181A'}}>
-                                    <img src={Carrito} alt="" width="25" style={{background:'#17181A'}}/>
+                                    <img src={Carrito} alt="" width="30" style={{background:'#17181A'}}/>
                                 </Link>
                             </div>
                         </li>
