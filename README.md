@@ -1,36 +1,14 @@
-# MERN Stack - Ecommerce
-> Ecommerce website built with the MERN stack with React Context API for state management, pure CSS for style
+# Scent House
+ “Scent House” es una empresa especializada en la elaboración de aceites esenciales, especialmente de la fruta del coco. Se mantiene la idea de un concepto innovador y con diseño, volviendo al negocio con una presencia de adaptabilidad a las necesidades del consumidor para ello se presenta un producto natural.
+ 
+ ## Tecnológicas Utilizadas⚙️:
+* [Visual Studio Code](https://code.visualstudio.com/) - IDE utilizado
+* [React](https://es.reactjs.org/) - Herramienta de uso
+* [MongoDB Atlas](https://www.mongodb.com/es/cloud/atlas) - Base de Datos
+* [Bootstrap](https://getbootstrap.com/) - HTML, CSS y JavaScript para desarrollar proyectos con capacidad de respuesta en la web.
+* [PostgresSQL](https://www.postgresql.org/) - Base de Datos
+* [Cloudinary](https://cloudinary.com/) - Gestor de recursos visuales
 
-## Demo: https://devat-ecommerce.herokuapp.com/
-
-## Author: Dev AT
-## Youtube tutorials: https://youtu.be/AjItjNc0bHA
-
-## Install dependencies for server 
-### `npm install`
-
-## Install dependencies for client
-### cd client ---> `npm install`
-
-## Connect to your mongodb and add info in .env
-
-## Add your paypal client id in client/src/components/mainpages/cart/PaypalButton.js
-
-## Run the client & server with concurrently
-### `npm run dev`
-
-## Run the Express server only
-### `npm run server`
-
-## Run the React client only
-### `npm run client`
-
-### Server runs on http://localhost:5000 and client on http://localhost:3000
-
-### User interface 
-
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568147/test/1_pe9ism.png)
-
-### Admin interface 
-
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568148/test/2_obw2r7.png)
+## Colaboradores 🛠️:
+<a href="https://github.com/luedco/"><img src="https://avatars.githubusercontent.com/u/38091075?v=4" width="100px" height="100px" style="max-width:100%;"></a>
+<a href="https://github.com/00209317/"><img src="https://avatars.githubusercontent.com/u/37201452?v=4" width="100px" height="100px" style="max-width:100%;"></a>
