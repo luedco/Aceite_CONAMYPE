@@ -52,7 +52,7 @@ function Header() {
 
     return (
         <header>
-            <img src={img} style={{ width: '100%', height: '60px'}}></img>
+            <img src={img} style={{ width: '100%', height: '100%'}}></img>
             <div className="menu" onClick={() => setMenu(!menu)}>
                 <img src={Menu} alt="" width="25" />
             </div>
@@ -72,7 +72,7 @@ function Header() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu style={{ background: '#17181A' }}>
-                        <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Descripción</Link></Dropdown.Item>
+                        <Dropdown.Item href="/quienesSomos#descripcionId"><Link Link to="/quienesSomos#descripcionId">Emprendimiento</Link></Dropdown.Item>
                         <Dropdown.Item href="/quienesSomos/fundadores"><Link to="/quienesSomos/fundadores">Fundadores</Link></Dropdown.Item>
                         <Dropdown.Item href="/quienesSomos/misionVision"><Link to="/quienesSomos/misionVision">Misión y Visión</Link></Dropdown.Item>
                     </Dropdown.Menu>

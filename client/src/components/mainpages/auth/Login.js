@@ -37,7 +37,7 @@ function Login() {
                         placeholder="Email" value={user.email} onChange={onChangeInput} />
 
                     <input type="password" name="password" required autoComplete="on"
-                        placeholder="Password" value={user.password} onChange={onChangeInput} />
+                        placeholder="Contraseña" value={user.password} onChange={onChangeInput} />
 
                     <div className="row">
                         <button type="submit">Entrar</button>

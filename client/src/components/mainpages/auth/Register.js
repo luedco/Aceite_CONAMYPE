@@ -35,10 +35,10 @@ function Register() {
                 <form onSubmit={registerSubmit}>
                     <h2 className="bnv">¡Bienvenido a Scent House!<img src={imgs[0]} alt="logo" className="imgCoco"></img></h2>
                     <input type="text" name="name" required
-                        placeholder="Name" value={user.name} onChange={onChangeInput} />
+                        placeholder="Nombre" value={user.name} onChange={onChangeInput} />
 
                     <input type="text" name="lastName" required
-                        placeholder="Last Name" value={user.lastName} onChange={onChangeInput}/>
+                        placeholder="Apellido" value={user.lastName} onChange={onChangeInput}/>
 
                     <input type="date" name="dob" required value={user.dob} onChange={onChangeInput}/>
 
@@ -46,7 +46,7 @@ function Register() {
                         placeholder="Email" value={user.email} onChange={onChangeInput} />
 
                     <input type="password" name="password" required autoComplete="on"
-                        placeholder="Password" value={user.password} onChange={onChangeInput} />
+                        placeholder="Contraseña" value={user.password} onChange={onChangeInput} />
 
                     <div className="row">
                         <button type="submit">Registrarte</button>
