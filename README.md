@@ -6,7 +6,6 @@
 * [React](https://es.reactjs.org/) - Herramienta de uso
 * [MongoDB Atlas](https://www.mongodb.com/es/cloud/atlas) - Base de Datos
 * [Bootstrap](https://getbootstrap.com/) - HTML, CSS y JavaScript para desarrollar proyectos con capacidad de respuesta en la web.
-* [PostgresSQL](https://www.postgresql.org/) - Base de Datos
 * [Cloudinary](https://cloudinary.com/) - Gestor de recursos visuales
 
 ## Colaboradores 🛠️:
